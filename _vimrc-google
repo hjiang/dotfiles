@@ -1,0 +1,73 @@
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+syntax on
+colorscheme desert
+
+source /home/build/public/eng/vim/google.vim
+source /home/build/nonconf/google3/tools/tags/gtags.vim
+
+set ruler " show the cursor position all the time
+set incsearch  " do incremental searching
+
+" perforce commands
+command! -nargs=* -complete=file Gedit :!g4 edit %
+command! -nargs=* -complete=file Grevert :!g4 revert %
+command! -nargs=* -complete=file Gdiff :!g4 diff %
+
+command! -nargs=* -complete=file Vedit :!/home/build/static/projects/overlayfs/v4 edit %
+command! -nargs=* -complete=file Vrevert :!/home/build/static/projects/overlayfs/v4 revert %
+command! -nargs=* -complete=file Vdiff :!/home/build/static/projects/overlayfs/v4 diff %
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+autocmd BufReadPost *
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal g`\"" |
+  \ endif
+
+function! s:CheckOutFile()
+ if filereadable(expand("%")) && ! filewritable(expand("%"))
+   let option = confirm("Readonly file, do you want to checkout from v4?"
+         \, "&Yes\n&No", 1, "Question")
+   if option == 1
+     VEdit
+   endif
+   edit!
+ endif
+endfunction
+au FileChangedRO * nested :call <SID>CheckOutFile()
+
+" Key bindings
+
+" Jump to definition of what's under cursor
+nmap <C-]> :call Gtag(expand('<cword>'))<CR>
+
+set completeopt=menu,longest,preview
+  augroup END
+
+
+" Read files from perforce repository
+autocmd BufReadCmd //depot/* exe "0r !p4 print -q <afile>"
+autocmd BufReadCmd //depot/* 1
+autocmd BufReadCmd //depot/* set readonly
+
+function! EnterPerforceFile()
+  setlocal nolist noet tw=0 ts=8 sw=8 sts=8 ft=conf
+  if search("<enter description here>") > 0
+    normal C
+    startins!
+  elseif bufname('*') != 'message'
+    /^Description:/
+    normal 2w
+  endif
+endfunction
+
+augroup filetypedetect
+  au BufNewFile,BufRead /tmp/g4_*,*p4-change*,*p4-client* call EnterPerforceFile()
+augroup END
+
+source ~/.vim/customization.vim
+
+set nospell
