@@ -84,16 +84,11 @@ unless given a prefix argument."
 
 (setq groovy-indent-level 2)
 
-(require 'yasnippet)
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/yasnippet/snippets")
-
 (require 'linum)
 (linum-mode t)
 
 (global-hl-line-mode t)
 (set-face-background 'hl-line "#333")
-;; (set-face-foreground 'hl-line "#ddd")
 
 ;; Color theme
 (require 'color-theme-autoloads "color-theme-autoloads")
