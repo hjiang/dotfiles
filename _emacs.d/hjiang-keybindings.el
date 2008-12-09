@@ -9,3 +9,5 @@
 (global-set-key [kp-delete] 'delete-char)
 (global-set-key "\M-gg" 'goto-line)
 (global-set-key "\C-xp" 'other-window-backward)
+(global-set-key "\C-x\C-p" 'other-window-backward)
+(global-set-key "\C-x\C-o" 'other-window)
