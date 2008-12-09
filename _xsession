@@ -1,0 +1,5 @@
+exec xfce4-panel&
+exec nm-applet&
+exec gnome-power-manager&
+xmodmap ~/.dotfiles/swap_capslock_and_ctrl.xmodmap
+exec stumpwm
