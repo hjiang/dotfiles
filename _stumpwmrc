@@ -1,0 +1,12 @@
+;; -*- mode: Lisp; -*-
+
+(defparameter terminal "exec xfce4-terminal")
+(defparameter terminal "exec firefox")
+
+(define-stumpwm-command "terminal" ()
+  (run-shell-command terminal))
+(define-stumpwm-command "firefox" ()
+  (run-shell-command firefox))
+
+(define-key *root-map* (kbd "c") terminal)
+(define-key *root-map* (kbd "b") firefox)
