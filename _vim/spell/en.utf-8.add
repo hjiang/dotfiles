@@ -42,3 +42,4 @@ gui
 win32
 x11
 gtk2
+programmatically
