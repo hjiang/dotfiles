@@ -25,5 +25,5 @@ do
 	LINE="${LINE}─"
 done
 
-export PS1='┌${LINE}[${COL}D────[30m[\u@\h][0m─────[36m[\t][0m─────[34m[\W][0m─────$(parse_git_branch)───
+export PS1='┌${LINE}[${COL}D────[32m[\u@\h][0m─────[36m[\t][0m─────[34m[\W][0m─────$(parse_git_branch)───
 └──> \$ '
