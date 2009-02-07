@@ -94,9 +94,9 @@ on disk.  Simply save again once Perforce is done."
 (load-file "~/.emacs.d/hjiang-keybindings.el")
 (load-file "~/.emacs.d/hjiang-customization.el")
 
-(require 'linum)
-(global-linum-mode t)
-(setq linum-format "%d ")
+;; (require 'linum)
+;; (global-linum-mode t)
+;; (setq linum-format "%d ")
 ;; (defun p4-command (&optional use-g4)
 ;;   "Returns the Perforce command to use.  Uses g4 if USE-G4 is non-nil."
 ;;   (format "cd ~; P4PORT=%s /usr/local/scripts/%s %s "

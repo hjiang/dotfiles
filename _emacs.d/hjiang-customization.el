@@ -84,16 +84,16 @@ unless given a prefix argument."
 
 (setq groovy-indent-level 2)
 
-(require 'linum)
-(linum-mode t)
+;; (require 'linum)
+;; (linum-mode t)
 
-(global-hl-line-mode t)
-(set-face-background 'hl-line "#333")
+;; (global-hl-line-mode t)
+;; (set-face-background 'hl-line "#333")
 
 ;; Color theme
 (require 'color-theme-autoloads "color-theme-autoloads")
 (color-theme-initialize)
 (color-theme-clarity)
 
-;; (tool-bar-mode 0)
-;; (menu-bar-mode 0)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
