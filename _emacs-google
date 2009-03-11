@@ -43,7 +43,7 @@
 (global-set-key [f6] 'google-pop-tag)
 (global-set-key [f7] 'google-show-matching-tags)
 (global-set-key [f3] 'gsearch)
-(global-set-key [f8] 'compile)
+(global-set-key [f8] 'google-compile)
 
 (gsearch-convert-filenames-on)
 
@@ -89,6 +89,13 @@ on disk.  Simply save again once Perforce is done."
     (start-process "g4-edit" "*G4 edit*" (p4-check-p4-executable) "edit" buffer-file-name)))
 (define-key p4-prefix-map "e" 'v4-edit-open-asynchronously)
 
+(defun rat-edit ()
+  "Just like v4-edit, but for labrats"
+  (interactive)
+  (if (not buffer-read-only)
+      (message "Buffer is already writeable (file: %s)." buffer-file-name)
+    (call-process "/home/build/static/projects/labrat/rat" nil nil nil "edit" buffer-file-name)
+    (setq buffer-read-only nil)))
 
 (load-file "~/.emacs.d/hjiang-functions.el")
 (load-file "~/.emacs.d/hjiang-keybindings.el")

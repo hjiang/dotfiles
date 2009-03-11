@@ -95,9 +95,14 @@ unless given a prefix argument."
 ;; (set-face-background 'hl-line "#333")
 
 ;; Color theme
-(require 'color-theme-autoloads "color-theme-autoloads")
-(color-theme-initialize)
-(color-theme-clarity)
+(if window-system
+    (progn (require 'color-theme-autoloads "color-theme-autoloads")
+	   (color-theme-initialize)
+	   (color-theme-clarity)))
 
-(tool-bar-mode 0)
-(menu-bar-mode 0)
+(tool-bar-mode nil)
+(menu-bar-mode nil)
+
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
+(smart-split)
