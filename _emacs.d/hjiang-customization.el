@@ -100,7 +100,6 @@ unless given a prefix argument."
 	   (color-theme-initialize)
 	   (color-theme-clarity)))
 
-(tool-bar-mode nil)
 (menu-bar-mode nil)
 
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
