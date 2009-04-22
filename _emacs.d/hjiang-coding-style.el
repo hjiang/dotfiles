@@ -22,11 +22,11 @@
 ;; Also useful, perhaps, is fill mode.  In theory, when you use M-q,
 ;; it will word-wrap your comment paragraphs.
 
-;; We'll use 4 everywhere for Python
-(setq py-indent-offset 4)
+;; We'll use 2 everywhere for Python
+(setq py-indent-offset 2)
 
 ;; Indent for JavaScript
-(setq js2-basic-offset 4)
+(setq js2-basic-offset 2)
 
 ;; Never use tabs, and indent by 4 properly.
 (defun hjiang-set-perl-style ()
