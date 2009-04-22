@@ -10,19 +10,9 @@
 ;; enable visual feedback on selections
 (setq-default transient-mark-mode t)
 
-(when window-system
-  ;; enable wheelmouse support by default
-  (mwheel-install)
-  ;; use extended compound-text coding for X clipboard
-  (set-selection-coding-system 'compound-text-with-extensions)
-  (tool-bar-mode nil)
-  (require 'color-theme)
-  (color-theme-initialize)
-  (color-theme-gnome2)
-  )
-
 (column-number-mode t)
 (show-paren-mode t)
+(setq show-paren-style 'parenthesis)
 (transient-mark-mode t)
 
 
