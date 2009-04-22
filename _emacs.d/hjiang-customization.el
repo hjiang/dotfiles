@@ -88,17 +88,19 @@ unless given a prefix argument."
 
 (setq groovy-indent-level 2)
 
-;; (require 'linum)
-;; (linum-mode t)
-
-;; (global-hl-line-mode t)
-;; (set-face-background 'hl-line "#333")
-
-;; Color theme
+;; GUI
 (if window-system
     (progn (require 'color-theme-autoloads "color-theme-autoloads")
 	   (color-theme-initialize)
-	   (color-theme-clarity)))
+	   (color-theme-clarity)
+           (global-hl-line-mode t)
+           (set-face-background 'hl-line "#333")
+           ;; enable wheelmouse support by default
+           (mwheel-install)
+           ;; use extended compound-text coding for X clipboard
+           (set-selection-coding-system 'compound-text-with-extensions)
+           (tool-bar-mode nil)
+           ))
 
 (menu-bar-mode nil)
 
