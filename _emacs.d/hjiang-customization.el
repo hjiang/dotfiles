@@ -11,7 +11,7 @@
 (setq-default transient-mark-mode t)
 
 (column-number-mode t)
-(show-paren-mode t)
+(show-paren-mode 1)
 (setq show-paren-style 'parenthesis)
 (transient-mark-mode t)
 
@@ -89,11 +89,20 @@ unless given a prefix argument."
            (mwheel-install)
            ;; use extended compound-text coding for X clipboard
            (set-selection-coding-system 'compound-text-with-extensions)
-           (tool-bar-mode nil)
+           (tool-bar-mode -1)
            ))
 
-(menu-bar-mode nil)
+(menu-bar-mode -1)
 
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 (smart-split)
+
+(ido-mode t)
+(setq ido-enable-prefix nil
+      ido-enable-flex-matching t
+      ido-create-new-buffer 'always
+      ido-use-filename-at-point t
+      ido-max-prospects 10)
+
+(set-default 'indicate-empty-lines t)

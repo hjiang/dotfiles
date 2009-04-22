@@ -1,9 +1,11 @@
 (setq default-frame-alist 
       '((font . "-*-bitstream vera sans mono-medium-r-*-*-14-*-*-*-*-*-*-*")))
 
-(require 'hjiang-coding-style) 
-(add-hook 'c-mode-common-hook 'hjiang-make-newline-indent)
+(add-to-list 'load-path "~/.emacs.d")
 
+(load-file "~/.emacs.d/hjiang-coding-style.el")
+
+;; TODO: replace with whitespace.el.
 (load-file "~/.emacs.d/show-wspace.el")
 
 (load-file "~/.emacs.d/hjiang-functions.el")
