@@ -10,19 +10,9 @@
 ;; enable visual feedback on selections
 (setq-default transient-mark-mode t)
 
-(when window-system
-  ;; enable wheelmouse support by default
-  (mwheel-install)
-  ;; use extended compound-text coding for X clipboard
-  (set-selection-coding-system 'compound-text-with-extensions)
-  (tool-bar-mode nil)
-  (require 'color-theme)
-  (color-theme-initialize)
-  (color-theme-gnome2)
-  )
-
 (column-number-mode t)
 (show-paren-mode t)
+(setq show-paren-style 'parenthesis)
 (transient-mark-mode t)
 
 
@@ -88,19 +78,20 @@ unless given a prefix argument."
 
 (setq groovy-indent-level 2)
 
-;; (require 'linum)
-;; (linum-mode t)
-
-;; (global-hl-line-mode t)
-;; (set-face-background 'hl-line "#333")
-
-;; Color theme
+;; GUI
 (if window-system
     (progn (require 'color-theme-autoloads "color-theme-autoloads")
 	   (color-theme-initialize)
-	   (color-theme-clarity)))
+	   (color-theme-clarity)
+           (global-hl-line-mode t)
+           (set-face-background 'hl-line "#333")
+           ;; enable wheelmouse support by default
+           (mwheel-install)
+           ;; use extended compound-text coding for X clipboard
+           (set-selection-coding-system 'compound-text-with-extensions)
+           (tool-bar-mode nil)
+           ))
 
-(tool-bar-mode nil)
 (menu-bar-mode nil)
 
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
