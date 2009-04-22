@@ -38,12 +38,12 @@
 (p4-enable-file-name-handler)
 
 
-(global-set-key [f4] 'google-show-tag-locations-regexp)
+(global-set-key "\M-gt" 'google-show-tag-locations-regexp)
 (global-set-key [f5] 'google-show-callers)
 (global-set-key [f6] 'google-pop-tag)
 (global-set-key [f7] 'google-show-matching-tags)
 (global-set-key [f3] 'gsearch)
-(global-set-key [f8] 'google-compile)
+(global-set-key "\M-gc" 'google-compile)
 
 (gsearch-convert-filenames-on)
 
