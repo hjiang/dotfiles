@@ -26,9 +26,8 @@
 (autoload 'markdown-mode "markdown-mode.el"
   "Major mode for editing Markdown files" t)
 
-;; ruby                                                                         
-;; based on http://www.rubygarden.org/Ruby/page/show/InstallingEmacsExtensions  
-;;                                                                              
+;; ruby
+;; based on http://www.rubygarden.org/Ruby/page/show/InstallingEmacsExtensions
 
 (add-to-list 'load-path "~/.emacs.d/ruby-mode")
 
@@ -64,8 +63,8 @@
 unless given a prefix argument."
   (interactive
    (list (read-buffer "Switch to buffer:"
-		      (other-buffer)
-		      (null current-prefix-arg)))))
+                      (other-buffer)
+                      (null current-prefix-arg)))))
 
 (defadvice switch-to-buffer-other-window
   (before existing-buffer activate compile)
@@ -73,8 +72,8 @@ unless given a prefix argument."
 unless given a prefix argument."
   (interactive
    (list (read-buffer "Switch to buffer:"
-		      (other-buffer)
-		      (null current-prefix-arg)))))
+                      (other-buffer)
+                      (null current-prefix-arg)))))
 
 (defadvice switch-to-buffer-other-frame
   (before existing-buffer activate compile)
@@ -82,8 +81,8 @@ unless given a prefix argument."
 unless given a prefix argument."
   (interactive
    (list (read-buffer "Switch to buffer:"
-		      (other-buffer)
-		      (null current-prefix-arg)))))
+                      (other-buffer)
+                      (null current-prefix-arg)))))
 
 (setq auto-mode-alist
       (cons '("SConstruct" . python-mode) auto-mode-alist))
@@ -99,17 +98,7 @@ unless given a prefix argument."
 
 ;; GUI
 (if window-system
-    (progn (require 'color-theme-autoloads "color-theme-autoloads")
-	   (color-theme-initialize)
-	   (color-theme-clarity)
-           (global-hl-line-mode t)
-           (set-face-background 'hl-line "#333")
-           ;; enable wheelmouse support by default
-           (mwheel-install)
-           ;; use extended compound-text coding for X clipboard
-           (set-selection-coding-system 'compound-text-with-extensions)
-           (tool-bar-mode -1)
-           ))
+    (hjiang-gui-customization))
 
 (menu-bar-mode -1)
 

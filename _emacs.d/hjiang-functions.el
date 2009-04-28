@@ -14,9 +14,24 @@
    fewer than 80 columns."
   (interactive)
   (defun smart-split-helper (w)
-    "Helper function to split a given window into two, the first of which has 
-     80 columns."
+    "Helper function to split a given window into two, the first of which has
+    80 columns."
     (if (> (window-width w) (* 2 81))
-	(let ((w2 (split-window w 82 t)))
-	  (smart-split-helper w2))))
-  (smart-split-helper nil))
+      (let ((w2 (split-window w 82 t)))
+        (smart-split-helper w2))))
+    (smart-split-helper nil))
+
+(defun hjiang-gui-customization ()
+  "Run the GUI customization stuff"
+  (interactive)
+  (progn (require 'color-theme-autoloads "color-theme-autoloads")
+         (color-theme-initialize)
+         (color-theme-clarity)
+         (global-hl-line-mode t)
+         (set-face-background 'hl-line "#333")
+         ;; enable wheelmouse support by default
+         (mwheel-install)
+         ;; use extended compound-text coding for X clipboard
+         (set-selection-coding-system 'compound-text-with-extensions)
+         (tool-bar-mode -1)
+         (scroll-bar-mode -1)))

@@ -39,10 +39,10 @@
 
 
 (global-set-key "\M-gt" 'google-show-tag-locations-regexp)
-(global-set-key [f5] 'google-show-callers)
+(global-set-key "\M-ga" 'google-show-callers)
 (global-set-key [f6] 'google-pop-tag)
 (global-set-key [f7] 'google-show-matching-tags)
-(global-set-key [f3] 'gsearch)
+(global-set-key "\M-gs" 'gsearch)
 (global-set-key "\M-gc" 'google-compile)
 
 (gsearch-convert-filenames-on)
@@ -68,9 +68,9 @@
 				     3)))
   (split-window-horizontally))
 
-(setq default-frame-alist
-    '((font . "-B&H-LucidaTypewriter-Medium-R-Normal-Sans-14-140-*-*-M-*-ISO8859-1")))
-(setq initial-frame-alist default-frame-alist)
+;; (setq default-frame-alist
+;;     '((font . "-B&H-LucidaTypewriter-Medium-R-Normal-Sans-14-140-*-*-M-*-ISO8859-1")))
+;; (setq initial-frame-alist default-frame-alist)
 
 (p4-set-p4-executable "/home/build/static/projects/overlayfs/g4_or_v4.sh")
 
