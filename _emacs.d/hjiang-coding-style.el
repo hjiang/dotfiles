@@ -49,7 +49,7 @@
   `((c-tab-always-indent . t)
     (c-recognize-knr-p . nil)
     (c-enable-xemacs-performance-kludge-p . t) ; speed up indentation in XEmacs
-    (c-basic-offset . 4)
+    (c-basic-offset . 2)
     (c-comment-only-line-offset . 0)
     (c-hanging-braces-alist . (
 			       (defun-open after)
