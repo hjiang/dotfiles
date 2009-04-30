@@ -1,0 +1,9 @@
+Xterm*background: #000000
+Xterm*foreground: #ffffff
+Xterm*faceName: Bitstream Vera Sans Mono
+aterm*background:Black
+aterm*foreground:White
+aterm*font:-*-terminus-medium-*-*-*-19-*-*-*-*-*-*-*
+aterm*boldFont:-*-terminus-bold-*-*-*-19-*-*-*-*-*-*-*
+aterm*loginShell:true
+Emacs.font: Monospace-12
