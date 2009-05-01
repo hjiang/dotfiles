@@ -16,5 +16,9 @@
  nxml-degraded t)
 (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo-mode))
 
+(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
 
 (server-start)

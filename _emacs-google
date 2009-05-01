@@ -100,6 +100,7 @@ on disk.  Simply save again once Perforce is done."
 (load-file "~/.emacs.d/hjiang-functions.el")
 (load-file "~/.emacs.d/hjiang-keybindings.el")
 (load-file "~/.emacs.d/hjiang-customization.el")
+(load-file "~/.emacs.d/common.el")
 
 ;; (require 'linum)
 ;; (global-linum-mode t)
