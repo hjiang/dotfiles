@@ -16,9 +16,16 @@
  nxml-degraded t)
 (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo-mode))
 
-(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet/")
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas/initialize)
-(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
+(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets/")
+
+(add-to-list 'load-path "~/.emacs.d/vendor/yaml-mode/")
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-hook 'yaml-mode-hook
+          '(lambda ()
+             (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 
 (server-start)
