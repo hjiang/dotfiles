@@ -7,6 +7,8 @@
 ;; under X, instead of the default, backspace behavior.
 (global-set-key [delete] 'delete-char)
 (global-set-key [kp-delete] 'delete-char)
+(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\M-gg" 'goto-line)
 (global-set-key "\C-xp" 'other-window-backward)
 (global-set-key "\C-x\C-p" 'other-window-backward)
