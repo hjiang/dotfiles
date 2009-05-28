@@ -31,4 +31,7 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 (require 'whitespace)
 
+(add-to-list 'load-path "~/.emacs.d/vendor/rinari")
+(require 'rinari)
+
 (server-start)
