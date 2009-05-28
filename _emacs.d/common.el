@@ -28,4 +28,7 @@
           '(lambda ()
              (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 
+(add-to-list 'load-path "~/.emacs.d/vendor/")
+(require 'whitespace)
+
 (server-start)
