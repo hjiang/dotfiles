@@ -1,3 +1,6 @@
 [submodule "_emacs.d/vendor/rinari"]
 	path = _emacs.d/vendor/rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "_emacs.d/vendor/magit"]
+	path = _emacs.d/vendor/magit
+	url = git://gitorious.org/magit/mainline.git
