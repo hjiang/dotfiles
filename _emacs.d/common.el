@@ -34,6 +34,9 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/rinari")
 (require 'rinari)
 
+(add-to-list 'load-path "~/.emacs.d/vendor/magit")
+(autoload 'magit-status "magit" nil t)
+
 ;; Language modes
 (add-to-list 'auto-mode-alist '("CMakeLists\\.txt\\'" . cmake-mode))
 (add-to-list 'auto-mode-alist '("\\.cmake\\'" . cmake-mode))
