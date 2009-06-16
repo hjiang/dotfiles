@@ -4,3 +4,6 @@
 [submodule "_emacs.d/vendor/magit"]
 	path = _emacs.d/vendor/magit
 	url = git://gitorious.org/magit/mainline.git
+[submodule "_emacs.d/vendor/jump"]
+	path = _emacs.d/vendor/jump
+	url = git://github.com/eschulte/jump.el.git

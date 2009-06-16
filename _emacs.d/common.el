@@ -31,6 +31,9 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 (require 'whitespace)
 
+;; needed by rinari
+(add-to-list 'load-path "~/.emacs.d/vendor/jump")
+
 (add-to-list 'load-path "~/.emacs.d/vendor/rinari")
 (require 'rinari)
 
