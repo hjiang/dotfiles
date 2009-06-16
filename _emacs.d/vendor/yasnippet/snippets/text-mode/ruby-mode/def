@@ -1,7 +1,6 @@
 #name : def ... end
 #group : definitions
 # --
-detect { |${e}| $0 }
 def ${e}
   $0
 end
