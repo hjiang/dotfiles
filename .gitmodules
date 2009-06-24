@@ -4,3 +4,6 @@
 [submodule "_emacs.d/vendor/jabber"]
 	path = _emacs.d/vendor/jabber
 	url = git://catap.ru/emacs-jabber/emacs-jabber.git
+[submodule "_emacs.d/vendor/magit"]
+	path = _emacs.d/vendor/magit
+	url = git://gitorious.org/magit/mainline.git
