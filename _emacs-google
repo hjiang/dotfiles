@@ -60,14 +60,6 @@
 
 (setq google-decipher-proto-files t)
 
-(server-start)
-
-(defun split-3-horizontal () (interactive)
-  (split-window-horizontally (* 2 (/ (let ((edges (window-edges)))
-				       (- (nth 2 edges) (nth 0 edges)))
-				     3)))
-  (split-window-horizontally))
-
 ;; (setq default-frame-alist
 ;;     '((font . "-B&H-LucidaTypewriter-Medium-R-Normal-Sans-14-140-*-*-M-*-ISO8859-1")))
 ;; (setq initial-frame-alist default-frame-alist)
@@ -102,10 +94,5 @@ on disk.  Simply save again once Perforce is done."
 (load-file "~/.emacs.d/hjiang-customization.el")
 (load-file "~/.emacs.d/common.el")
 
-;; (require 'linum)
-;; (global-linum-mode t)
-;; (setq linum-format "%d ")
-;; (defun p4-command (&optional use-g4)
-;;   "Returns the Perforce command to use.  Uses g4 if USE-G4 is non-nil."
-;;   (format "cd ~; P4PORT=%s /usr/local/scripts/%s %s "
-;;       p4-port (if use-g4 "g4" "p4") p4-options))
+(auto-revert-mode)
+(server-start)
