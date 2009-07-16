@@ -34,9 +34,9 @@
 (require 'gsearch)                  ;; Search the whole Google code base.
 (google-setup-tramp)
 
-(require 'p4-files)                 ;; transparent support for Perforce filesystem
-(p4-enable-file-name-handler)
-
+;; commented out because this doesn't work in China
+;; (require 'p4-files)                 ;; transparent support for Perforce filesystem
+;; (p4-enable-file-name-handler)
 
 (global-set-key "\M-gt" 'google-show-tag-locations-regexp)
 (global-set-key "\M-ga" 'google-show-callers)
