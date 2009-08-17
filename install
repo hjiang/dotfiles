@@ -8,3 +8,12 @@ ln -sf $DOTFILES/_vimrc ~/.vimrc
 ln -sf $DOTFILES/bash/bashrc ~/.bashrc
 ln -sf $DOTFILES/zshrc ~/.zshrc
 ln -sf $DOTFILES/screenrc ~/.screenrc
+
+# install vcprompt
+cd /tmp
+wget http://vc.gerg.ca/hg/vcprompt/archive/tip.tar.gz
+tar -xzf tip.tar.gz
+cd vcprompt*
+make
+mkdir ~/bin
+mv vcprompt ~/bin/
