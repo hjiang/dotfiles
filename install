@@ -15,5 +15,5 @@ wget http://vc.gerg.ca/hg/vcprompt/archive/tip.tar.gz
 tar -xzf tip.tar.gz
 cd vcprompt*
 make
-mkdir ~/bin
+mkdir -p ~/bin
 mv vcprompt ~/bin/
