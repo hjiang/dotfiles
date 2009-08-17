@@ -1,0 +1,5 @@
+SCRIPTDIR=~/code/dotfiles/bash
+. $SCRIPTDIR/env.sh
+# . $SCRIPTDIR/prompt.sh
+. $SCRIPTDIR/set_emacsclient_as_editor.sh
+. $SCRIPTDIR/aliases
