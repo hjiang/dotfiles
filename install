@@ -1,0 +1,10 @@
+#!/bin/sh
+
+DOTFILES=~/code/dotfiles
+ln -sf $DOTFILES/_emacs-linux ~/.emacs
+ln -sf $DOTFILES/_emacs.d ~/.emacs.d
+ln -sf $DOTFILES/_vim ~/.vim
+ln -sf $DOTFILES/_vimrc ~/.vimrc
+ln -sf $DOTFILES/bash/bashrc ~/.bashrc
+ln -sf $DOTFILES/zshrc ~/.zshrc
+ln -sf $DOTFILES/screenrc ~/.screenrc
