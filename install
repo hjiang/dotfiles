@@ -7,7 +7,7 @@ backup_and_link() {
     if [ -e $link ]; then
         mv "$link" "${link}.bak.$timestamp"
     fi
-    if [[ -L $link && ! -e $link ]]; then
+    if [ -L $link ] && [ ! -e $link ]; then
         rm -rf "$link"
     fi
     ln -s "$target" "$link"
