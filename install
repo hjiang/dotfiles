@@ -1,12 +1,16 @@
 #!/bin/sh
 
 backup_and_link() {
-  target=$1
-  link=$2
-  if [ -e $link ]; then
-    mv "$link" "${link}.bak"
-  fi
-  ln -s "$target" "$link"
+    target=$1
+    link=$2
+    timestamp=`date +%Y-%m-%d-%H-%M-%N`
+    if [ -e $link ]; then
+        mv "$link" "${link}.bak.$timestamp"
+    fi
+    if [[ -L $link && ! -e $link ]]; then
+        rm -rf "$link"
+    fi
+    ln -s "$target" "$link"
 }
 
 DOTFILES=~/code/dotfiles
@@ -17,12 +21,16 @@ backup_and_link $DOTFILES/_vimrc ~/.vimrc
 backup_and_link $DOTFILES/bash/bashrc ~/.bashrc
 backup_and_link $DOTFILES/zshrc ~/.zshrc
 backup_and_link $DOTFILES/screenrc ~/.screenrc
+mkdir -p ~/.ssh
+backup_and_link $DOTFILES/ssh/config ~/.ssh/config
 
 # install vcprompt
-cd /tmp
-wget http://vc.gerg.ca/hg/vcprompt/archive/tip.tar.gz
-tar -xzf tip.tar.gz
-cd vcprompt*
-make
-mkdir -p ~/bin
-mv vcprompt ~/bin/
+if [ ! -f ~/bin/vcprompt ]; then
+    cd /tmp
+    wget http://vc.gerg.ca/hg/vcprompt/archive/tip.tar.gz
+    tar -xzf tip.tar.gz
+    cd vcprompt*
+    make
+    mkdir -p ~/bin
+    mv vcprompt ~/bin/
+fi
