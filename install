@@ -1,13 +1,22 @@
 #!/bin/sh
 
+backup_and_link() {
+  target=$1
+  link=$2
+  if [ -e $link ]; then
+    mv "$link" "${link}.bak"
+  fi
+  ln -s "$target" "$link"
+}
+
 DOTFILES=~/code/dotfiles
-ln -sf $DOTFILES/_emacs-linux ~/.emacs
-ln -sf $DOTFILES/_emacs.d ~/.emacs.d
-ln -sf $DOTFILES/_vim ~/.vim
-ln -sf $DOTFILES/_vimrc ~/.vimrc
-ln -sf $DOTFILES/bash/bashrc ~/.bashrc
-ln -sf $DOTFILES/zshrc ~/.zshrc
-ln -sf $DOTFILES/screenrc ~/.screenrc
+backup_and_link $DOTFILES/_emacs-linux ~/.emacs
+backup_and_link $DOTFILES/_emacs.d ~/.emacs.d
+backup_and_link $DOTFILES/_vim ~/.vim
+backup_and_link $DOTFILES/_vimrc ~/.vimrc
+backup_and_link $DOTFILES/bash/bashrc ~/.bashrc
+backup_and_link $DOTFILES/zshrc ~/.zshrc
+backup_and_link $DOTFILES/screenrc ~/.screenrc
 
 # install vcprompt
 cd /tmp
