@@ -2,12 +2,14 @@
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-export PATH=$PATH:~/code/scripts:~/bin
+export PATH=~/code/scripts:~/bin:$PATH
 
 export EDITOR=vim
 export VISUAL=$EDITOR
 export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
+
+export LC_ALL=en_US.UTF-8
 
 case `hostname` in
   *.google.com) export IN_GOOGLE=1 ;;
