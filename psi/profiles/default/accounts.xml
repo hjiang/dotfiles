@@ -1,0 +1,2905 @@
+<!DOCTYPE accounts>
+<accounts version="0.13" xmlns="http://psi-im.org/options" >
+ <accounts>
+  <a0>
+   <group-state>
+    <m0>
+     <key type="QString" >Agents/Transports</key>
+     <open type="bool" >false</open>
+     <rank type="int" >0</rank>
+    </m0>
+    <m1>
+     <key type="QString" >Buddies</key>
+     <open type="bool" >false</open>
+     <rank type="int" >0</rank>
+    </m1>
+    <m2>
+     <key type="QString" >General</key>
+     <open type="bool" >false</open>
+     <rank type="int" >0</rank>
+    </m2>
+    <m3>
+     <key type="QString" >Googlers</key>
+     <open type="bool" >false</open>
+     <rank type="int" >0</rank>
+    </m3>
+   </group-state>
+   <tls>
+    <override-certificate type="QByteArray" >MIIC3zCCAkigAwIBAgIDBz+XMA0GCSqGSIb3DQEBBQUAME4xCzAJBgNVBAYTAlVTMRAwDgYDVQQKEwdFcXVpZmF4MS0wKwYDVQQLEyRFcXVpZmF4IFNlY3VyZSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMDcwNDExMTcyMDE2WhcNMTIwNDEwMTcyMDE2WjBqMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xGDAWBgNVBAMTD3RhbGsuZ29vZ2xlLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsLkOh82kqj7iN3PCmdFjLGI3aSlf8LnaoZQFhN6xSHut6Ik2gte3NHs6mcusZFWWhw6ybPJSBxKRHv+AXUc4kJx2AKzib0tIEJBM5Egjv1GdB4bIPXZG+HXLEvapcO0NwPpwowAFxpCPtAGn6Btut7zGNJ0uGUWqf4+Rj5F5qJMCAwEAAaOBrjCBqzAOBgNVHQ8BAf8EBAMCBPAwHQYDVR0OBBYEFK3PSh66G0urCT8XleYAehNPVag9MDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwuZ2VvdHJ1c3QuY29tL2NybHMvc2VjdXJlY2EuY3JsMB8GA1UdIwQYMBaAFEjmaPkr0rKV10fYIyAQTzOYkJ/UMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjANBgkqhkiG9w0BAQUFAAOBgQBEMlKmdzYZMdVOJVuXkVxqsvL836/aYptG3FCJiDeC8KU5shu6eL5CmdqyGWO06TsHeZgrx5P6xEnthSq0uT/VHosiKWfnlCbaglnoQ5o5/2e9a/btuFFHTfown40f4uDR59vBOqmESepppU7u7RuMbBv0aAiwSY0iWY4lq7DU/A==</override-certificate>
+    <override-domain type="QString" ></override-domain>
+   </tls>
+   <roster-cache>
+    <a290>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Qiying Lin</name>
+     <jid type="QString" >merlinlqy@google.com</jid>
+    </a290>
+    <a291>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Michelle M. Cheng</name>
+     <jid type="QString" >michellemay@google.com</jid>
+    </a291>
+    <a292>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Michal Szymaniak</name>
+     <jid type="QString" >mips@google.com</jid>
+    </a292>
+    <a293>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Mike Fuller</name>
+     <jid type="QString" >mjf@google.com</jid>
+    </a293>
+    <a294>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >matthew j weaver</name>
+     <jid type="QString" >mjw@google.com</jid>
+    </a294>
+    <a295>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Matthew Watson</name>
+     <jid type="QString" >mrw@google.com</jid>
+    </a295>
+    <a296>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Matthew Smith</name>
+     <jid type="QString" >mtsmith@google.com</jid>
+    </a296>
+    <a297>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Matt Wytock</name>
+     <jid type="QString" >mwytock@google.com</jid>
+    </a297>
+    <a298>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Ming Zhao</name>
+     <jid type="QString" >mzhao@google.com</jid>
+    </a298>
+    <a299>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Nemo Semret</name>
+     <jid type="QString" >nemozen@google.com</jid>
+    </a299>
+    <a0>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Cao Jing</name>
+     <jid type="QString" >sophiacao@google.com</jid>
+    </a0>
+    <a1>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ellen Spertus</name>
+     <jid type="QString" >spertus@google.com</jid>
+    </a1>
+    <a2>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Sreedhar Mukkamalla</name>
+     <jid type="QString" >sreedhar@google.com</jid>
+    </a2>
+    <a3>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Steven Zhang</name>
+     <jid type="QString" >stevenzhang@google.com</jid>
+    </a3>
+    <a4>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Patrik Sundberg</name>
+     <jid type="QString" >sundberg@google.com</jid>
+    </a4>
+    <a5>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Qi Sun</name>
+     <jid type="QString" >sunq@google.com</jid>
+    </a5>
+    <a6>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Tap Lertpanyavit</name>
+     <jid type="QString" >tap@google.com</jid>
+    </a6>
+    <a7>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Tom Duerig</name>
+     <jid type="QString" >tduerig@google.com</jid>
+    </a7>
+    <a8>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Tiger Feng</name>
+     <jid type="QString" >tigerf@google.com</jid>
+    </a8>
+    <a9>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Zhen Shen</name>
+     <jid type="QString" >timgreen@google.com</jid>
+    </a9>
+    <a300>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Nicole Gurries</name>
+     <jid type="QString" >ngurries@google.com</jid>
+    </a300>
+    <a301>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Nitin Gupta</name>
+     <jid type="QString" >nitingupta@google.com</jid>
+    </a301>
+    <a302>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Neil Sanchala</name>
+     <jid type="QString" >nsanch@google.com</jid>
+    </a302>
+    <a303>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Pei Cao</name>
+     <jid type="QString" >pei@google.com</jid>
+    </a303>
+    <a304>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >pengjunlu(鲁鹏俊)</name>
+     <jid type="QString" >pengjunlu@google.com</jid>
+    </a304>
+    <a305>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Paul Fontes</name>
+     <jid type="QString" >pfontes@google.com</jid>
+    </a305>
+    <a306>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Piyush Prahladka</name>
+     <jid type="QString" >piyushp@google.com</jid>
+    </a306>
+    <a307>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Manoj Plakal</name>
+     <jid type="QString" >plakal@google.com</jid>
+    </a307>
+    <a308>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Peter Ludemann</name>
+     <jid type="QString" >pludemann@google.com</jid>
+    </a308>
+    <a100>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Yuan Zhou</name>
+     <jid type="QString" >zhouyuan@google.com</jid>
+    </a100>
+    <a309>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Po Zhang (张钋)</name>
+     <jid type="QString" >pozhang@google.com</jid>
+    </a309>
+    <a101>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >ionpro</jid>
+    </a101>
+    <a102>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >ZK</name>
+     <jid type="QString" >zkyan@google.com</jid>
+    </a102>
+    <a103>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Zuguang Yang</name>
+     <jid type="QString" >zuguang@google.com</jid>
+    </a103>
+    <a104>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dan Zhao</name>
+     <jid type="QString" >zdan@google.com</jid>
+    </a104>
+    <a105>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Xin Zhou</name>
+     <jid type="QString" >zhounew@google.com</jid>
+    </a105>
+    <a106>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >alexraikman@google.com</name>
+     <jid type="QString" >alexraikman@google.com</jid>
+    </a106>
+    <a107>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Bo Tao</name>
+     <jid type="QString" >botao@google.com</jid>
+    </a107>
+    <a310>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Qiang Zhou(周强)</name>
+     <jid type="QString" >qiangz@google.com</jid>
+    </a310>
+    <a108>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Chaitanya Gharpure</name>
+     <jid type="QString" >chaitanyag@google.com</jid>
+    </a108>
+    <a311>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Qin Liu (刘勤)</name>
+     <jid type="QString" >qinliu@google.com</jid>
+    </a311>
+    <a109>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Douglas Pollock</name>
+     <jid type="QString" >doogle@google.com</jid>
+    </a109>
+    <a312>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Radha Narayan</name>
+     <jid type="QString" >radhan@google.com</jid>
+    </a312>
+    <a313>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >rafferty</name>
+     <jid type="QString" >rafferty@google.com</jid>
+    </a313>
+    <a10>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ning Wang (王宁)</name>
+     <jid type="QString" >nwang@google.com</jid>
+    </a10>
+    <a314>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Renjie Jiang</name>
+     <jid type="QString" >renjie@google.com</jid>
+    </a314>
+    <a11>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >jjtswan</name>
+     <jid type="QString" >jjtswan@google.com</jid>
+    </a11>
+    <a315>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Richard Gooch</name>
+     <jid type="QString" >rgooch@google.com</jid>
+    </a315>
+    <a12>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jesse Shieh</name>
+     <jid type="QString" >jesses@google.com</jid>
+    </a12>
+    <a316>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Rhoda Abidog</name>
+     <jid type="QString" >rhoda@google.com</jid>
+    </a316>
+    <a13>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jun Liu</name>
+     <jid type="QString" >jl@google.com</jid>
+    </a13>
+    <a317>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ryan Brown</name>
+     <jid type="QString" >ribrdb@google.com</jid>
+    </a317>
+    <a14>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jia Sheng</name>
+     <jid type="QString" >jias@google.com</jid>
+    </a14>
+    <a318>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Richard Fang (方坤)</name>
+     <jid type="QString" >richardfang@google.com</jid>
+    </a318>
+    <a110>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >jcrim</jid>
+    </a110>
+    <a15>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Emily Johnston (एमिली जॉन्स्टन)</name>
+     <jid type="QString" >tehmle@google.com</jid>
+    </a15>
+    <a319>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ricky</name>
+     <jid type="QString" >rickyshan@google.com</jid>
+    </a319>
+    <a111>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Issao Fujiwara</name>
+     <jid type="QString" >issao@google.com</jid>
+    </a111>
+    <a16>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Paul Yan</name>
+     <jid type="QString" >pyan@google.com</jid>
+    </a16>
+    <a112>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >jmittleman</jid>
+    </a112>
+    <a17>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Lenjoy Lin</name>
+     <jid type="QString" >lenjoy@google.com</jid>
+    </a17>
+    <a113>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >James Powell</name>
+     <jid type="QString" >jpowell@google.com</jid>
+    </a113>
+    <a18>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Lijie Chen</name>
+     <jid type="QString" >lijie@google.com</jid>
+    </a18>
+    <a114>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >jyasskin</jid>
+    </a114>
+    <a19>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Roland Wang (王欣磊)</name>
+     <jid type="QString" >rolandwang@google.com</jid>
+    </a19>
+    <a115>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Qian Gao (高倩)</name>
+     <jid type="QString" >qgao@google.com</jid>
+    </a115>
+    <a116>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >nnorwitz</jid>
+    </a116>
+    <a117>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Robin Shostack</name>
+     <jid type="QString" >shostack@google.com</jid>
+    </a117>
+    <a320>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Shariq Rizvi</name>
+     <jid type="QString" >rizvi@google.com</jid>
+    </a320>
+    <a118>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >twang</jid>
+    </a118>
+    <a321>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Gregor Rothfuss</name>
+     <jid type="QString" >rothfuss@google.com</jid>
+    </a321>
+    <a119>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >vc@bot.talk.google.com</name>
+     <jid type="QString" >vc@bot.talk.google.com</jid>
+    </a119>
+    <a322>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Ritika Sanghi</name>
+     <jid type="QString" >rsanghi@google.com</jid>
+    </a322>
+    <a323>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Krishnan Subramaniam</name>
+     <jid type="QString" >rskrishnan@google.com</jid>
+    </a323>
+    <a20>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Tim Johnson</name>
+     <jid type="QString" >timjohnson@google.com</jid>
+    </a20>
+    <a324>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Robert Stacey</name>
+     <jid type="QString" >rstacey@google.com</jid>
+    </a324>
+    <a21>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Tyler Morse</name>
+     <jid type="QString" >tmorse@google.com</jid>
+    </a21>
+    <a325>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Sai</name>
+     <jid type="QString" >sai@google.com</jid>
+    </a325>
+    <a22>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Tony Gentilcore</name>
+     <jid type="QString" >tonyg@google.com</jid>
+    </a22>
+    <a326>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Shashank Bapat</name>
+     <jid type="QString" >sbapat@google.com</jid>
+    </a326>
+    <a23>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Torrey Hoffman</name>
+     <jid type="QString" >torrey@google.com</jid>
+    </a23>
+    <a327>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Scotty Allen</name>
+     <jid type="QString" >scotty@google.com</jid>
+    </a327>
+    <a24>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Tom ☮ Ritchford</name>
+     <jid type="QString" >tritchford@google.com</jid>
+    </a24>
+    <a328>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Sterling Stein</name>
+     <jid type="QString" >scubed@google.com</jid>
+    </a328>
+    <a120>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Alexey Agafonov</name>
+     <jid type="QString" >aagafonov@google.com</jid>
+    </a120>
+    <a25>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Tim Tang (唐汀)</name>
+     <jid type="QString" >ttang@google.com</jid>
+    </a25>
+    <a329>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >sean</name>
+     <jid type="QString" >sean@google.com</jid>
+    </a329>
+    <a121>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Abraham Lee</name>
+     <jid type="QString" >abe@google.com</jid>
+    </a121>
+    <a26>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Uday Naik</name>
+     <jid type="QString" >uday@google.com</jid>
+    </a26>
+    <a122>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Abhinandan Das</name>
+     <jid type="QString" >abhinandan@google.com</jid>
+    </a122>
+    <a27>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Uri Bernstein</name>
+     <jid type="QString" >urib@google.com</jid>
+    </a27>
+    <a123>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >abodenha</name>
+     <jid type="QString" >abodenha@google.com</jid>
+    </a123>
+    <a28>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Van Dao</name>
+     <jid type="QString" >vdao@google.com</jid>
+    </a28>
+    <a124>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Hao Wang</name>
+     <jid type="QString" >whao@google.com</jid>
+    </a124>
+    <a29>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Sameer Ajmani</name>
+     <jid type="QString" >sameer@google.com</jid>
+    </a29>
+    <a125>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Eric Flatt</name>
+     <jid type="QString" >eflatt@google.com</jid>
+    </a125>
+    <a126>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Greg Christiana</name>
+     <jid type="QString" >gfc@google.com</jid>
+    </a126>
+    <a127>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >jmegq</name>
+     <jid type="QString" >jmegq@google.com</jid>
+    </a127>
+    <a330>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Seapahn Megerian</name>
+     <jid type="QString" >seapahn@google.com</jid>
+    </a330>
+    <a128>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Scott Williams</name>
+     <jid type="QString" >williasr@google.com</jid>
+    </a128>
+    <a331>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Sherry Huang</name>
+     <jid type="QString" >shuang@google.com</jid>
+    </a331>
+    <a129>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Hao Wang</name>
+     <jid type="QString" >wanghao@google.com</jid>
+    </a129>
+    <a332>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Shuangfeng Li</name>
+     <jid type="QString" >shuangfeng@google.com</jid>
+    </a332>
+    <a333>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Si Li</name>
+     <jid type="QString" >sli@google.com</jid>
+    </a333>
+    <a30>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >veerareddy</name>
+     <jid type="QString" >veerareddy@google.com</jid>
+    </a30>
+    <a334>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" ></name>
+     <jid type="QString" >chrisr@google.com</jid>
+    </a334>
+    <a31>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Ashutosh Shukla</name>
+     <jid type="QString" >shukla@google.com</jid>
+    </a31>
+    <a335>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" ></name>
+     <jid type="QString" >nguy@google.com</jid>
+    </a335>
+    <a32>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Sarah J. Bell</name>
+     <jid type="QString" >sjb@google.com</jid>
+    </a32>
+    <a33>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Shelley L. Shostak</name>
+     <jid type="QString" >sls@google.com</jid>
+    </a33>
+    <a34>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Steven Ge</name>
+     <jid type="QString" >stevenge@google.com</jid>
+    </a34>
+    <a35>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Zheng Sun</name>
+     <jid type="QString" >sunz@google.com</jid>
+    </a35>
+    <a130>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Adam Klein</name>
+     <jid type="QString" >adamk@google.com</jid>
+    </a130>
+    <a36>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Surabhi Gupta</name>
+     <jid type="QString" >surabhig@google.com</jid>
+    </a36>
+    <a131>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Amin Charaniya</name>
+     <jid type="QString" >acharaniya@google.com</jid>
+    </a131>
+    <a37>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Vincent Hoon</name>
+     <jid type="QString" >vincenthoon@google.com</jid>
+    </a37>
+    <a132>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Andrew Hogue</name>
+     <jid type="QString" >ahogue@google.com</jid>
+    </a132>
+    <a38>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Teresa Chai (柴轶昕)</name>
+     <jid type="QString" >tchai@google.com</jid>
+    </a38>
+    <a133>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Alex Kim</name>
+     <jid type="QString" >alexkim@google.com</jid>
+    </a133>
+    <a39>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Vincent Zhou (周桂衡)</name>
+     <jid type="QString" >vincentzhou@google.com</jid>
+    </a39>
+    <a134>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Akash Nanavati</name>
+     <jid type="QString" >akash@google.com</jid>
+    </a134>
+    <a135>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Amay Champaneria</name>
+     <jid type="QString" >amay@google.com</jid>
+    </a135>
+    <a136>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Alex Khesin</name>
+     <jid type="QString" >alexk@google.com</jid>
+    </a136>
+    <a137>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Archana Kannan</name>
+     <jid type="QString" >archanakannan@google.com</jid>
+    </a137>
+    <a138>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Alex Lu</name>
+     <jid type="QString" >alexlu@google.com</jid>
+    </a138>
+    <a139>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Alexandre Petcherski</name>
+     <jid type="QString" >apetcher@google.com</jid>
+    </a139>
+    <a40>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >tracyzhang</name>
+     <jid type="QString" >tracyzhang@google.com</jid>
+    </a40>
+    <a41>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Vishal</name>
+     <jid type="QString" >vishalt@google.com</jid>
+    </a41>
+    <a42>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Todd Turnidge</name>
+     <jid type="QString" >turnidge@google.com</jid>
+    </a42>
+    <a43>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Vivek Raghunathan</name>
+     <jid type="QString" >vraghunathan@google.com</jid>
+    </a43>
+    <a44>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >vsahai</name>
+     <jid type="QString" >vsahai@google.com</jid>
+    </a44>
+    <a45>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Cheng Xu</name>
+     <jid type="QString" >chengxu@google.com</jid>
+    </a45>
+    <a140>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >appleton</name>
+     <jid type="QString" >appleton@google.com</jid>
+    </a140>
+    <a46>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Feng Wang</name>
+     <jid type="QString" >wangfeng@google.com</jid>
+    </a46>
+    <a141>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Alan Davidson</name>
+     <jid type="QString" >apsd@google.com</jid>
+    </a141>
+    <a47>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Yuguo Liao</name>
+     <jid type="QString" >guziliao@google.com</jid>
+    </a47>
+    <a142>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Arthur Gleckler</name>
+     <jid type="QString" >arthur@google.com</jid>
+    </a142>
+    <a48>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Wee Teck Ng</name>
+     <jid type="QString" >weeteck@google.com</jid>
+    </a48>
+    <a143>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >astrid</name>
+     <jid type="QString" >astrid@google.com</jid>
+    </a143>
+    <a49>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Iain Becker</name>
+     <jid type="QString" >iainb@google.com</jid>
+    </a49>
+    <a144>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Ben Cox</name>
+     <jid type="QString" >bcox@google.com</jid>
+    </a144>
+    <a145>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Ben Smith</name>
+     <jid type="QString" >ben@google.com</jid>
+    </a145>
+    <a146>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Benjamin Pflanz</name>
+     <jid type="QString" >bpflanz@google.com</jid>
+    </a146>
+    <a147>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Robert Bryant</name>
+     <jid type="QString" >bryantrobby@google.com</jid>
+    </a147>
+    <a148>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >cconrad</name>
+     <jid type="QString" >cconrad@google.com</jid>
+    </a148>
+    <a149>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" ></name>
+     <jid type="QString" >chuanhui@google.com</jid>
+    </a149>
+    <a50>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >David Weitzman</name>
+     <jid type="QString" >weitzman@google.com</jid>
+    </a50>
+    <a51>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jay Crim</name>
+     <jid type="QString" >jcrim@google.com</jid>
+    </a51>
+    <a52>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Wei Wu</name>
+     <jid type="QString" >weiwu@google.com</jid>
+    </a52>
+    <a53>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Mike Comer</name>
+     <jid type="QString" >mcomer@google.com</jid>
+    </a53>
+    <a54>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Tai-Yi Huang</name>
+     <jid type="QString" >tyhuang@google.com</jid>
+    </a54>
+    <a55>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Wenxin Li</name>
+     <jid type="QString" >wenxin@google.com</jid>
+    </a55>
+    <a150>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Adam Westall</name>
+     <jid type="QString" >awestall@google.com</jid>
+    </a150>
+    <a56>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Chen Qiliang</name>
+     <jid type="QString" >qiliangchen@google.com</jid>
+    </a56>
+    <a151>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Chris Jaeger</name>
+     <jid type="QString" >cjaeger@google.com</jid>
+    </a151>
+    <a57>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Unnur Gretarsdottir</name>
+     <jid type="QString" >unnurg@google.com</jid>
+    </a57>
+    <a152>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Alex Wu</name>
+     <jid type="QString" >awu@google.com</jid>
+    </a152>
+    <a58>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Liang Yu</name>
+     <jid type="QString" >yuliang@google.com</jid>
+    </a58>
+    <a153>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Chris Shabsin</name>
+     <jid type="QString" >cshabsin@google.com</jid>
+    </a153>
+    <a59>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Wei Liu</name>
+     <jid type="QString" >weiliu@google.com</jid>
+    </a59>
+    <a154>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Alan Zeng</name>
+     <jid type="QString" >azeng@google.com</jid>
+    </a154>
+    <a155>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Deep Bote</name>
+     <jid type="QString" >deepb@google.com</jid>
+    </a155>
+    <a156>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dmitry Barashev</name>
+     <jid type="QString" >barashev@google.com</jid>
+    </a156>
+    <a157>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Devin Murphy</name>
+     <jid type="QString" >devinm@google.com</jid>
+    </a157>
+    <a158>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" ></name>
+     <jid type="QString" >bdumitru@google.com</jid>
+    </a158>
+    <a159>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Benjy Weinberger</name>
+     <jid type="QString" >benjy@google.com</jid>
+    </a159>
+    <a60>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Zhen Huang</name>
+     <jid type="QString" >zhenh@google.com</jid>
+    </a60>
+    <a61>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Wen Xu</name>
+     <jid type="QString" >wen@google.com</jid>
+    </a61>
+    <a62>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jiqi Pan</name>
+     <jid type="QString" >jiqi@hjiang.net</jid>
+    </a62>
+    <a63>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Wensheng Wang</name>
+     <jid type="QString" >wensheng@google.com</jid>
+    </a63>
+    <a64>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Shubhie Panicker</name>
+     <jid type="QString" >panicker@google.com</jid>
+    </a64>
+    <a65>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Will Chan</name>
+     <jid type="QString" >willchan@google.com</jid>
+    </a65>
+    <a160>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Manish Bhatia</name>
+     <jid type="QString" >bhatia@google.com</jid>
+    </a160>
+    <a66>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Xinyue Zhai</name>
+     <jid type="QString" >xinyuezhai@google.com</jid>
+    </a66>
+    <a161>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Bing Liu</name>
+     <jid type="QString" >bingliu@google.com</jid>
+    </a161>
+    <a67>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jun Xu</name>
+     <jid type="QString" >xujun@google.com</jid>
+    </a67>
+    <a162>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Benjamin Lee</name>
+     <jid type="QString" >blee@google.com</jid>
+    </a162>
+    <a68>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Xuemei Gu ☂ ♫</name>
+     <jid type="QString" >xgu@google.com</jid>
+    </a68>
+    <a163>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Brian Turnbull</name>
+     <jid type="QString" >bmt@google.com</jid>
+    </a163>
+    <a69>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Hangjun Ye</name>
+     <jid type="QString" >yehangjun@google.com</jid>
+    </a69>
+    <a164>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Douglas Yoshinaga</name>
+     <jid type="QString" >dougy@google.com</jid>
+    </a164>
+    <a165>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Finnegan Southey</name>
+     <jid type="QString" >finnegan@google.com</jid>
+    </a165>
+    <a166>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Greg Billock</name>
+     <jid type="QString" >gbillock@google.com</jid>
+    </a166>
+    <a167>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Gaurav Garg</name>
+     <jid type="QString" >ggaurav@google.com</jid>
+    </a167>
+    <a168>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ben Gilad</name>
+     <jid type="QString" >gilad@google.com</jid>
+    </a168>
+    <a169>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Gangjiang Li</name>
+     <jid type="QString" >gli@google.com</jid>
+    </a169>
+    <a70>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Chuan Xu</name>
+     <jid type="QString" >xuchuan@google.com</jid>
+    </a70>
+    <a71>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Yaron Friedman</name>
+     <jid type="QString" >yfriedman@google.com</jid>
+    </a71>
+    <a72>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >yapn@google.com</name>
+     <jid type="QString" >yapn@google.com</jid>
+    </a72>
+    <a73>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Yi Li</name>
+     <jid type="QString" >yili@google.com</jid>
+    </a73>
+    <a74>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Zhenhua Yin</name>
+     <jid type="QString" >yinz@google.com</jid>
+    </a74>
+    <a75>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Scott Safier</name>
+     <jid type="QString" >ssafier@google.com</jid>
+    </a75>
+    <a170>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Brian Murphy</name>
+     <jid type="QString" >brianrmurphy@google.com</jid>
+    </a170>
+    <a76>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >yiping (王一平)</name>
+     <jid type="QString" >yiping@google.com</jid>
+    </a76>
+    <a171>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Lei Guo</name>
+     <jid type="QString" >guolei@google.com</jid>
+    </a171>
+    <a77>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Yu Wang</name>
+     <jid type="QString" >wangyu@google.com</jid>
+    </a77>
+    <a172>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Xiaoye Lu</name>
+     <jid type="QString" >bright@google.com</jid>
+    </a172>
+    <a78>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jiaqi Yu</name>
+     <jid type="QString" >yjq@google.com</jid>
+    </a78>
+    <a173>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Garrett Wu</name>
+     <jid type="QString" >gwu@google.com</jid>
+    </a173>
+    <a79>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Warren Yenson</name>
+     <jid type="QString" >woz@google.com</jid>
+    </a79>
+    <a174>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Brian Rogan</name>
+     <jid type="QString" >brogan@google.com</jid>
+    </a174>
+    <a175>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Hai Fang</name>
+     <jid type="QString" >haif@google.com</jid>
+    </a175>
+    <a176>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Christine Doyle</name>
+     <jid type="QString" >cdoyle@google.com</jid>
+    </a176>
+    <a177>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Helena Tian</name>
+     <jid type="QString" >helenatian@google.com</jid>
+    </a177>
+    <a178>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Chaesang Jung</name>
+     <jid type="QString" >chaesang@google.com</jid>
+    </a178>
+    <a179>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ying Chai</name>
+     <jid type="QString" >chaiying@google.com</jid>
+    </a179>
+    <a80>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Diki Zhang</name>
+     <jid type="QString" >yongzhang@google.com</jid>
+    </a80>
+    <a81>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Xiaorui Gan</name>
+     <jid type="QString" >gxr@google.com</jid>
+    </a81>
+    <a82>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Peter Yu</name>
+     <jid type="QString" >yuluo@google.com</jid>
+    </a82>
+    <a83>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Andrew Hurst</name>
+     <jid type="QString" >hurstdog@google.com</jid>
+    </a83>
+    <a84>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Yu Liao (廖宇)</name>
+     <jid type="QString" >yliao@google.com</jid>
+    </a84>
+    <a85>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Min Zeng</name>
+     <jid type="QString" >zengmin@google.com</jid>
+    </a85>
+    <a180>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Cheng Zhu</name>
+     <jid type="QString" >chengzhu@google.com</jid>
+    </a180>
+    <a86>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Andy Martone</name>
+     <jid type="QString" >martone@google.com</jid>
+    </a86>
+    <a181>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Cheri Martin</name>
+     <jid type="QString" >cherim@google.com</jid>
+    </a181>
+    <a87>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Yufeng Cao</name>
+     <jid type="QString" >yufengcao@google.com</jid>
+    </a87>
+    <a182>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Curt Hoyt</name>
+     <jid type="QString" >choyt@google.com</jid>
+    </a182>
+    <a88>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Bharat Mediratta</name>
+     <jid type="QString" >mediratta@google.com</jid>
+    </a88>
+    <a183>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Christine Davis</name>
+     <jid type="QString" >crd@google.com</jid>
+    </a183>
+    <a89>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Yufan Zhu</name>
+     <jid type="QString" >yzhu@google.com</jid>
+    </a89>
+    <a184>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Henry Chang</name>
+     <jid type="QString" >henryc@google.com</jid>
+    </a184>
+    <a185>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Henry Li</name>
+     <jid type="QString" >henryli@google.com</jid>
+    </a185>
+    <a186>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Ge Hong</name>
+     <jid type="QString" >hongge@google.com</jid>
+    </a186>
+    <a187>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Hui Tan (檀慧)</name>
+     <jid type="QString" >huitan@google.com</jid>
+    </a187>
+    <a188>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jason Roberts</name>
+     <jid type="QString" >ionpro@google.com</jid>
+    </a188>
+    <a189>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Lizhu Yu</name>
+     <jid type="QString" >jackyyu@google.com</jid>
+    </a189>
+    <a90>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Neal Norwitz</name>
+     <jid type="QString" >nnorwitz@google.com</jid>
+    </a90>
+    <a91>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >zhanglin</name>
+     <jid type="QString" >zhanglin@google.com</jid>
+    </a91>
+    <a92>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jing Qu (曲径)</name>
+     <jid type="QString" >quj@google.com</jid>
+    </a92>
+    <a93>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jenny Zhao</name>
+     <jid type="QString" >zhz@google.com</jid>
+    </a93>
+    <a94>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jeffrey Rennie (レニー）</name>
+     <jid type="QString" >rennie@google.com</jid>
+    </a94>
+    <a95>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >china-demo-days@conference.google.com</jid>
+    </a95>
+    <a190>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Craig Sosin</name>
+     <jid type="QString" >csosin@google.com</jid>
+    </a190>
+    <a96>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >collinw</jid>
+    </a96>
+    <a191>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Manas Jagadev</name>
+     <jid type="QString" >jagadev@google.com</jid>
+    </a191>
+    <a97>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >finnegan</jid>
+    </a97>
+    <a192>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Cynthia Yeung</name>
+     <jid type="QString" >cyeung@google.com</jid>
+    </a192>
+    <a98>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Zhang Hua 章华</name>
+     <jid type="QString" >zhanghua@google.com</jid>
+    </a98>
+    <a193>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jason Bouzane</name>
+     <jid type="QString" >jbouzane@google.com</jid>
+    </a193>
+    <a99>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" ></name>
+     <jid type="QString" >gpwolfe</jid>
+    </a99>
+    <a194>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >David Agraz</name>
+     <jid type="QString" >dagraz@google.com</jid>
+    </a194>
+    <a195>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jessy Zhao(赵海侠)</name>
+     <jid type="QString" >jessyzhao@google.com</jid>
+    </a195>
+    <a196>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Daniel Wang</name>
+     <jid type="QString" >danielwang@google.com</jid>
+    </a196>
+    <a197>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jonathan McPhie</name>
+     <jid type="QString" >jmcphie@google.com</jid>
+    </a197>
+    <a198>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >David Ganzhorn</name>
+     <jid type="QString" >davidganzhorn@google.com</jid>
+    </a198>
+    <a199>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dan Bloch</name>
+     <jid type="QString" >dbloch@google.com</jid>
+    </a199>
+    <a200>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >David Black</name>
+     <jid type="QString" >dcblack@google.com</jid>
+    </a200>
+    <a201>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Daphne Dembo</name>
+     <jid type="QString" >ddembo@google.com</jid>
+    </a201>
+    <a202>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >David Bennett</name>
+     <jid type="QString" >ddt@google.com</jid>
+    </a202>
+    <a203>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Boris Debic</name>
+     <jid type="QString" >debic@google.com</jid>
+    </a203>
+    <a204>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >jmenzel</name>
+     <jid type="QString" >jmenzel@google.com</jid>
+    </a204>
+    <a205>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Josh Mittleman</name>
+     <jid type="QString" >jmittleman@google.com</jid>
+    </a205>
+    <a206>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jun Gong (龚骏)</name>
+     <jid type="QString" >jungong@google.com</jid>
+    </a206>
+    <a207>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Kai Yang</name>
+     <jid type="QString" >kaiyang@google.com</jid>
+    </a207>
+    <a208>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >koyao</name>
+     <jid type="QString" >koyao@google.com</jid>
+    </a208>
+    <a209>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >ksarvian</name>
+     <jid type="QString" >ksarvian@google.com</jid>
+    </a209>
+    <a210>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jed Denlea</name>
+     <jid type="QString" >denlea@google.com</jid>
+    </a210>
+    <a211>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Kun Xiang</name>
+     <jid type="QString" >kunx@google.com</jid>
+    </a211>
+    <a212>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dan Hartmann</name>
+     <jid type="QString" >dghartmann@google.com</jid>
+    </a212>
+    <a213>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Kyle Scholz</name>
+     <jid type="QString" >kylescholz@google.com</jid>
+    </a213>
+    <a214>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Diego Puppin</name>
+     <jid type="QString" >diegolino@google.com</jid>
+    </a214>
+    <a215>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Michelle Levesque</name>
+     <jid type="QString" >levesque@google.com</jid>
+    </a215>
+    <a216>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >David Marcin</name>
+     <jid type="QString" >djmarcin@google.com</jid>
+    </a216>
+    <a217>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Liyong Chen</name>
+     <jid type="QString" >lychen@google.com</jid>
+    </a217>
+    <a218>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dustin Long</name>
+     <jid type="QString" >dlong@google.com</jid>
+    </a218>
+    <a219>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dion Loy</name>
+     <jid type="QString" >dloy@google.com</jid>
+    </a219>
+    <a220>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dima Koubenski</name>
+     <jid type="QString" >dmitrik@google.com</jid>
+    </a220>
+    <a221>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dan Moisa</name>
+     <jid type="QString" >dmoisa@google.com</jid>
+    </a221>
+    <a222>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Dale Neal</name>
+     <jid type="QString" >dneal@google.com</jid>
+    </a222>
+    <a223>
+     <subscription type="QString" >none</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" >subscribe</ask>
+     <name type="QString" >domo-kun@google.com</name>
+     <jid type="QString" >domo-kun@google.com</jid>
+    </a223>
+    <a224>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Minkoo</name>
+     <jid type="QString" >mkseo@google.com</jid>
+    </a224>
+    <a225>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Mahesh Palekar</name>
+     <jid type="QString" >mpalekar@google.com</jid>
+    </a225>
+    <a226>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" ></name>
+     <jid type="QString" >muzahid@google.com</jid>
+    </a226>
+    <a227>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Nate Gaylinn</name>
+     <jid type="QString" >ngaylinn@google.com</jid>
+    </a227>
+    <a228>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" ></name>
+     <jid type="QString" >nkozlosky@google.com</jid>
+    </a228>
+    <a229>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Rachel Grey</name>
+     <jid type="QString" >octagon@google.com</jid>
+    </a229>
+    <a230>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >David Held</name>
+     <jid type="QString" >drheld@google.com</jid>
+    </a230>
+    <a231>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jim Morrison</name>
+     <jid type="QString" >phython@google.com</jid>
+    </a231>
+    <a232>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Doug Simpkinson</name>
+     <jid type="QString" >dvs@google.com</jid>
+    </a232>
+    <a233>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >ruud de rooij</name>
+     <jid type="QString" >ruud@google.com</jid>
+    </a233>
+    <a234>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Edmond Lau</name>
+     <jid type="QString" >edmondlau@google.com</jid>
+    </a234>
+    <a235>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ryoji Watanabe</name>
+     <jid type="QString" >ryoji@google.com</jid>
+    </a235>
+    <a236>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Elizabeth Hamon Reid</name>
+     <jid type="QString" >ehamon@google.com</jid>
+    </a236>
+    <a237>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Samarth Keshava</name>
+     <jid type="QString" >samarth@google.com</jid>
+    </a237>
+    <a238>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Ben Eitzen</name>
+     <jid type="QString" >eitzenb@google.com</jid>
+    </a238>
+    <a239>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Evelyn Kao</name>
+     <jid type="QString" >ekao@google.com</jid>
+    </a239>
+    <a240>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Eric Higgins</name>
+     <jid type="QString" >erichiggins@google.com</jid>
+    </a240>
+    <a241>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Andrea Chu (楚放)</name>
+     <jid type="QString" >fchu@google.com</jid>
+    </a241>
+    <a242>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Andrew Fikes</name>
+     <jid type="QString" >fikes@google.com</jid>
+    </a242>
+    <a243>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Peng (Fred) Zhang</name>
+     <jid type="QString" >fredz@google.com</jid>
+    </a243>
+    <a244>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Fan Xia (夏凡)</name>
+     <jid type="QString" >fxia@google.com</jid>
+    </a244>
+    <a245>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >George Madrid</name>
+     <jid type="QString" >gmadrid@google.com</jid>
+    </a245>
+    <a246>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Greg Steuck (Sh-toy-k)</name>
+     <jid type="QString" >gnezdo@google.com</jid>
+    </a246>
+    <a247>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Gary Wolfe</name>
+     <jid type="QString" >gpwolfe@google.com</jid>
+    </a247>
+    <a248>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Gabriel Taubman</name>
+     <jid type="QString" >gtaubman@google.com</jid>
+    </a248>
+    <a249>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Harriett Hardman</name>
+     <jid type="QString" >harriett@google.com</jid>
+    </a249>
+    <a250>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Hubert Chao 趙明華</name>
+     <jid type="QString" >hchao@google.com</jid>
+    </a250>
+    <a251>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Hongxu Cai</name>
+     <jid type="QString" >hongxu@google.com</jid>
+    </a251>
+    <a252>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >JanoS (Ján Senko)</name>
+     <jid type="QString" >janos@google.com</jid>
+    </a252>
+    <a253>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >James Baker</name>
+     <jid type="QString" >jbaker@google.com</jid>
+    </a253>
+    <a254>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jim Deng(邓剑刚)</name>
+     <jid type="QString" >jdeng@google.com</jid>
+    </a254>
+    <a255>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jean-Luc Brouillet</name>
+     <jid type="QString" >jeanluc@google.com</jid>
+    </a255>
+    <a256>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >John Fu</name>
+     <jid type="QString" >jefu@google.com</jid>
+    </a256>
+    <a257>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jian Zhou</name>
+     <jid type="QString" >jianzhou@google.com</jid>
+    </a257>
+    <a258>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jim Zhuang</name>
+     <jid type="QString" >jimz@google.com</jid>
+    </a258>
+    <a259>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jing Zhao</name>
+     <jid type="QString" >jingzhao@google.com</jid>
+    </a259>
+    <a260>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jonathan Butler</name>
+     <jid type="QString" >jkbutler@google.com</jid>
+    </a260>
+    <a261>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Justin Kennington</name>
+     <jid type="QString" >jkennington@google.com</jid>
+    </a261>
+    <a262>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jas Strong</name>
+     <jid type="QString" >jls@google.com</jid>
+    </a262>
+    <a263>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Josh Daniel</name>
+     <jid type="QString" >joshd@google.com</jid>
+    </a263>
+    <a264>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Joey Rozier</name>
+     <jid type="QString" >jrozier@google.com</jid>
+    </a264>
+    <a265>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jeremy Smith</name>
+     <jid type="QString" >jrsmith@google.com</jid>
+    </a265>
+    <a266>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Jon Salz</name>
+     <jid type="QString" >jsalz@google.com</jid>
+    </a266>
+    <a267>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jonathan Shneier</name>
+     <jid type="QString" >jshneier@google.com</jid>
+    </a267>
+    <a268>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >jsilber</name>
+     <jid type="QString" >jsilber@google.com</jid>
+    </a268>
+    <a269>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Junyu Wang | 王俊煜</name>
+     <jid type="QString" >junyu@google.com</jid>
+    </a269>
+    <a270>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Kai Wang</name>
+     <jid type="QString" >kaiwang@google.com</jid>
+    </a270>
+    <a271>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >katelyn</name>
+     <jid type="QString" >katelyn@google.com</jid>
+    </a271>
+    <a272>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Ken Dauber</name>
+     <jid type="QString" >kdauber@google.com</jid>
+    </a272>
+    <a273>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Kevin D. Chang</name>
+     <jid type="QString" >kevinchang@google.com</jid>
+    </a273>
+    <a274>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Kristopher Hom</name>
+     <jid type="QString" >khom@google.com</jid>
+    </a274>
+    <a275>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Bryan Klimt</name>
+     <jid type="QString" >klimt@google.com</jid>
+    </a275>
+    <a276>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Weitong Kong</name>
+     <jid type="QString" >kongwt@google.com</jid>
+    </a276>
+    <a277>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Krishna</name>
+     <jid type="QString" >krishnamohan@google.com</jid>
+    </a277>
+    <a278>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Keith Wolfe</name>
+     <jid type="QString" >kwolfe@google.com</jid>
+    </a278>
+    <a279>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Mike Lambert</name>
+     <jid type="QString" >lambert@google.com</jid>
+    </a279>
+    <a280>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Lan Liu</name>
+     <jid type="QString" >lanliu@google.com</jid>
+    </a280>
+    <a281>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Brian Larson</name>
+     <jid type="QString" >larson@google.com</jid>
+    </a281>
+    <a282>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Larry Sun</name>
+     <jid type="QString" >larsun@google.com</jid>
+    </a282>
+    <a283>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Jules Lei</name>
+     <jid type="QString" >leiheng@google.com</jid>
+    </a283>
+    <a284>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Lingyun Liu (刘凌云）</name>
+     <jid type="QString" >lingyun@google.com</jid>
+    </a284>
+    <a285>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Liz Xu Wilson</name>
+     <jid type="QString" >lizx@google.com</jid>
+    </a285>
+    <a286>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Li Lao (劳丽)</name>
+     <jid type="QString" >llao@google.com</jid>
+    </a286>
+    <a287>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Googlers</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Lawrence You</name>
+     <jid type="QString" >lyou@google.com</jid>
+    </a287>
+    <a288>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Matt Armstrong</name>
+     <jid type="QString" >marmstrong@google.com</jid>
+    </a288>
+    <a289>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >mec</name>
+     <jid type="QString" >mec@google.com</jid>
+    </a289>
+   </roster-cache>
+   <custom-auth>
+    <use type="bool" >false</use>
+    <authid type="QString" ></authid>
+    <realm type="QString" ></realm>
+   </custom-auth>
+   <log type="bool" >true</log>
+   <use-host type="bool" >false</use-host>
+   <stun-port type="QString" >3478</stun-port>
+   <security-level type="int" >0</security-level>
+   <port type="int" >5222</port>
+   <ignore-SSL-warnings type="bool" >false</ignore-SSL-warnings>
+   <keep-alive type="bool" >true</keep-alive>
+   <connect-after-sleep type="bool" >true</connect-after-sleep>
+   <pgp-secret-key-id type="QString" ></pgp-secret-key-id>
+   <name type="QString" >google.com</name>
+   <ssl type="QString" >auto</ssl>
+   <reconn type="bool" >true</reconn>
+   <proxy-id type="QString" ></proxy-id>
+   <bytestreams-proxy type="QString" ></bytestreams-proxy>
+   <priority type="int" >5</priority>
+   <jid type="QString" >hjiang@google.com</jid>
+   <resource type="QString" >Psi</resource>
+   <password type="QString" >001800180051003b0020002300720037</password>
+   <compress type="bool" >false</compress>
+   <automatic-resource type="bool" >true</automatic-resource>
+   <legacy-ssl-probe type="bool" >true</legacy-ssl-probe>
+   <require-mutual-auth type="bool" >false</require-mutual-auth>
+   <enabled type="bool" >true</enabled>
+   <auto type="bool" >true</auto>
+   <allow-plain type="QString" >over encryped</allow-plain>
+   <stun-host type="QString" ></stun-host>
+   <host type="QString" ></host>
+  </a0>
+  <a1>
+   <group-state>
+    <m0>
+     <key type="QString" >Buddies</key>
+     <open type="bool" >false</open>
+     <rank type="int" >0</rank>
+    </m0>
+    <m1>
+     <key type="QString" >General</key>
+     <open type="bool" >false</open>
+     <rank type="int" >0</rank>
+    </m1>
+    <m2>
+     <key type="QString" >Individuals</key>
+     <open type="bool" >false</open>
+     <rank type="int" >0</rank>
+    </m2>
+   </group-state>
+   <tls>
+    <override-certificate type="QByteArray" >MIIC3zCCAkigAwIBAgIDBz+XMA0GCSqGSIb3DQEBBQUAME4xCzAJBgNVBAYTAlVTMRAwDgYDVQQKEwdFcXVpZmF4MS0wKwYDVQQLEyRFcXVpZmF4IFNlY3VyZSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMDcwNDExMTcyMDE2WhcNMTIwNDEwMTcyMDE2WjBqMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xGDAWBgNVBAMTD3RhbGsuZ29vZ2xlLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsLkOh82kqj7iN3PCmdFjLGI3aSlf8LnaoZQFhN6xSHut6Ik2gte3NHs6mcusZFWWhw6ybPJSBxKRHv+AXUc4kJx2AKzib0tIEJBM5Egjv1GdB4bIPXZG+HXLEvapcO0NwPpwowAFxpCPtAGn6Btut7zGNJ0uGUWqf4+Rj5F5qJMCAwEAAaOBrjCBqzAOBgNVHQ8BAf8EBAMCBPAwHQYDVR0OBBYEFK3PSh66G0urCT8XleYAehNPVag9MDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwuZ2VvdHJ1c3QuY29tL2NybHMvc2VjdXJlY2EuY3JsMB8GA1UdIwQYMBaAFEjmaPkr0rKV10fYIyAQTzOYkJ/UMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjANBgkqhkiG9w0BAQUFAAOBgQBEMlKmdzYZMdVOJVuXkVxqsvL836/aYptG3FCJiDeC8KU5shu6eL5CmdqyGWO06TsHeZgrx5P6xEnthSq0uT/VHosiKWfnlCbaglnoQ5o5/2e9a/btuFFHTfown40f4uDR59vBOqmESepppU7u7RuMbBv0aAiwSY0iWY4lq7DU/A==</override-certificate>
+    <override-domain type="QString" ></override-domain>
+   </tls>
+   <roster-cache>
+    <a0>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Individuals</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Zeng Zhu</name>
+     <jid type="QString" >zeng.zhu@gmail.com</jid>
+    </a0>
+    <a1>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Individuals</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >佶琦</name>
+     <jid type="QString" >jiqi@hjiang.net</jid>
+    </a1>
+    <a2>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >Hao Wang</name>
+     <jid type="QString" >wanghao@google.com</jid>
+    </a2>
+    <a3>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >jinlei li</name>
+     <jid type="QString" >jinlei1.li@gmail.com</jid>
+    </a3>
+    <a4>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Individuals</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >jwfing</name>
+     <jid type="QString" >jwfing@gmail.com</jid>
+    </a4>
+    <a5>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Buddies</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >左力</name>
+     <jid type="QString" >leilei2722@gmail.com</jid>
+    </a5>
+    <a6>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >lufee. wang</name>
+     <jid type="QString" >lufee.wang@gmail.com</jid>
+    </a6>
+    <a7>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Individuals</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Naboo Bot</name>
+     <jid type="QString" >naboobot@gmail.com</jid>
+    </a7>
+    <a8>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Individuals</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Yu Pan</name>
+     <jid type="QString" >panyu2000@gmail.com</jid>
+    </a8>
+    <a9>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Individuals</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Zhi Zhou</name>
+     <jid type="QString" >zhi.zhou@gmail.com</jid>
+    </a9>
+    <a10>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" >
+      <item>Individuals</item>
+     </groups>
+     <ask type="QString" ></ask>
+     <name type="QString" >Hai Fang</name>
+     <jid type="QString" >haif@google.com</jid>
+    </a10>
+    <a11>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >en2ru@bot.talk.google.com</name>
+     <jid type="QString" >en2ru@bot.talk.google.com</jid>
+    </a11>
+    <a12>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >en2zh@bot.talk.google.com</name>
+     <jid type="QString" >en2zh@bot.talk.google.com</jid>
+    </a12>
+    <a13>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >ru2en@bot.talk.google.com</name>
+     <jid type="QString" >ru2en@bot.talk.google.com</jid>
+    </a13>
+    <a14>
+     <subscription type="QString" >both</subscription>
+     <groups type="QStringList" />
+     <ask type="QString" ></ask>
+     <name type="QString" >zh2en@bot.talk.google.com</name>
+     <jid type="QString" >zh2en@bot.talk.google.com</jid>
+    </a14>
+   </roster-cache>
+   <custom-auth>
+    <use type="bool" >false</use>
+    <authid type="QString" ></authid>
+    <realm type="QString" ></realm>
+   </custom-auth>
+   <log type="bool" >true</log>
+   <use-host type="bool" >true</use-host>
+   <stun-port type="QString" >3478</stun-port>
+   <security-level type="int" >0</security-level>
+   <port type="int" >5223</port>
+   <ignore-SSL-warnings type="bool" >false</ignore-SSL-warnings>
+   <keep-alive type="bool" >true</keep-alive>
+   <connect-after-sleep type="bool" >true</connect-after-sleep>
+   <pgp-secret-key-id type="QString" ></pgp-secret-key-id>
+   <name type="QString" >hong@hjiang.net</name>
+   <ssl type="QString" >legacy</ssl>
+   <reconn type="bool" >true</reconn>
+   <proxy-id type="QString" ></proxy-id>
+   <bytestreams-proxy type="QString" ></bytestreams-proxy>
+   <priority type="int" >5</priority>
+   <jid type="QString" >hong@hjiang.net</jid>
+   <resource type="QString" >Psi</resource>
+   <password type="QString" >001b0024005a00060019005a005f0002</password>
+   <compress type="bool" >false</compress>
+   <automatic-resource type="bool" >true</automatic-resource>
+   <legacy-ssl-probe type="bool" >true</legacy-ssl-probe>
+   <require-mutual-auth type="bool" >false</require-mutual-auth>
+   <enabled type="bool" >true</enabled>
+   <auto type="bool" >true</auto>
+   <allow-plain type="QString" >over encryped</allow-plain>
+   <stun-host type="QString" ></stun-host>
+   <host type="QString" >talk.google.com</host>
+  </a1>
+ </accounts>
+</accounts>
