@@ -2,7 +2,7 @@
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-export PATH=~/code/scripts:~/bin:$PATH
+export PATH=~/code/scripts:~/bin:~/.gem/ruby/1.8/bin:$PATH
 
 export EDITOR=vim
 export VISUAL=$EDITOR
