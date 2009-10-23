@@ -23,6 +23,7 @@ backup_and_link $DOTFILES/zshrc ~/.zshrc
 backup_and_link $DOTFILES/screenrc ~/.screenrc
 mkdir -p ~/.ssh
 backup_and_link $DOTFILES/ssh/config ~/.ssh/config
+backup_and_link $DOTFILES/psi ~/.psi
 
 # install vcprompt
 if [ ! -f ~/bin/vcprompt ]; then

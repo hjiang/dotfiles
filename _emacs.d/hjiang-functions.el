@@ -21,6 +21,14 @@
         (smart-split-helper w2))))
     (smart-split-helper nil))
 
+(defun close-all-buffers ()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
+
+(defun revert-all-buffers ()
+  (interactive)
+  (mapc 'revert-buffer (buffer-list)))
+
 (defun hjiang-gui-customization ()
   "Run the GUI customization stuff"
   (interactive)
