@@ -1,5 +1,5 @@
 (setq default-frame-alist 
-      '((font . "-*-bitstream vera sans mono-medium-r-*-*-14-*-*-*-*-*-*-*")))
+      '((font . "-dejavu-dejavu sans mono-medium-r-*-*-14-*-*-*-*-*-*-*")))
 
 (add-to-list 'load-path "~/.emacs.d")
 
