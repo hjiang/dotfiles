@@ -53,4 +53,12 @@
 (setq auto-mode-alist
     (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
+;; org-mode
+(add-to-list 'load-path "~/.emacs.d/vendor/org-mode")
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
 (server-start)
