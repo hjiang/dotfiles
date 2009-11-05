@@ -7,3 +7,6 @@
 [submodule "_emacs.d/vendor/jump"]
 	path = _emacs.d/vendor/jump
 	url = git://github.com/eschulte/jump.el.git
+[submodule "_emacs.d/vendor/org-mode"]
+	path = _emacs.d/vendor/org-mode
+	url = git://repo.or.cz/org-mode.git
