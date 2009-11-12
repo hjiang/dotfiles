@@ -25,4 +25,5 @@ if [ $IN_GOOGLE -eq 1 ]; then
   export PATH=$HOME/opt/bin:$HOME/depot_tools:/opt/bin:$PATH:/auto/build/public/google/tools:/home/build/nonconf/google3/tools:$HOME/.gem/ruby/1.8/bin:/home/build/static/projects/overlayfs
   test -e /home/build/static/projects/loas/setup-corp-loasd.sh && /home/build/static/projects/loas/setup-corp-loasd.sh -q
   # export USE_CANARY_BLAZE=head
+  alias mendel=/home/build/static/projects/mendel/mendel
 fi
