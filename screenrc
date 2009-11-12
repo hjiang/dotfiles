@@ -171,3 +171,5 @@ bind ^] paste [.]
 # hardstatus alwayslastline "%w"
 
 defutf8 on
+
+encoding UTF-8
