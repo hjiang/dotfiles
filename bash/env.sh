@@ -10,6 +10,7 @@ export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
 
 export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Clojure
 # Install using ~/code/scripts/install_clojure.sh
