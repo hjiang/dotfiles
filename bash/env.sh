@@ -15,7 +15,7 @@ export LC_ALL=en_US.UTF-8
 # Install using ~/code/scripts/install_clojure.sh
 export CLOJURE_EXT=~/.clojure
 PATH=$PATH:~/.clojure/launchers/bash
-alias clj=clj-env-dir
+alias clj="rlwrap clj-env-dir"
 
 case `hostname` in
   *.google.com) export IN_GOOGLE=1 ;;
