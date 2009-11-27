@@ -43,3 +43,16 @@
          (set-selection-coding-system 'compound-text-with-extensions)
          (tool-bar-mode -1)
          (scroll-bar-mode -1)))
+
+(defun fill-sentence ()
+  (interactive)
+  (save-excursion
+    (or (eq (point) (point-max)) (forward-char))
+    (forward-sentence -1)
+    (indent-relative t)
+    (let ((beg (point))
+          (ix (string-match "LaTeX" mode-name)))
+      (forward-sentence)
+      (if (and ix (equal "LaTeX" (substring mode-name ix)))
+          (LaTeX-fill-region-as-paragraph beg (point))
+        (fill-region-as-paragraph beg (point))))))
