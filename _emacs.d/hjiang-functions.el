@@ -42,7 +42,9 @@
          ;; use extended compound-text coding for X clipboard
          (set-selection-coding-system 'compound-text-with-extensions)
          (tool-bar-mode -1)
-         (scroll-bar-mode -1)))
+         (scroll-bar-mode -1)
+         (setq default-frame-alist
+               '((font . "Monospace-12")))))
 
 (defun fill-sentence ()
   (interactive)
