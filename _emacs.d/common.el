@@ -86,10 +86,12 @@
 (slime-setup)
 
 ;; auctex
-(add-to-list 'load-path "~/.emacs.d/vendor/auctex-11.85")
-(add-to-list 'load-path "~/.emacs.d/vendor/auctex-11.85/preview")
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
+(if (string= (getenv "X_JH_LATEX_INSTALLED") "1")
+    (progn
+      (add-to-list 'load-path "~/.emacs.d/vendor/auctex-11.85")
+      (add-to-list 'load-path "~/.emacs.d/vendor/auctex-11.85/preview")
+      (load "auctex.el" nil t t)
+      (load "preview-latex.el" nil t t)))
 
 (global-set-key (kbd "M-j") 'fill-sentence)
 
