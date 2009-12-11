@@ -60,6 +60,7 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+(setq org-export-latex-listings t)
 
 ;; clojure-mode
 (add-to-list 'load-path "~/.emacs.d/vendor/clojure-mode")
