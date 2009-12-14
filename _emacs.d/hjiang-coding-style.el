@@ -132,11 +132,17 @@
   (add-hook 'write-file-hooks 'delete-trailing-whitespace t)
   (setq show-trailing-whitespace t))
 
+(defun hjiang-disallow-tab-indent ()
+  "Don't use tabs to indent."
+  (setq indent-tabs-mode nil))
+  
+
 (add-hook 'c-mode-common-hook 'hjiang-c-mode-common-hook)
+(add-hook 'c-mode-common-hook 'hjiang-make-newline-indent)
+
+(add-hook 'clojure-mode 'hjiang-disallow-tab-indent)
 
 (setq-default indent-tabs-mode nil)
-
-(add-hook 'c-mode-common-hook 'hjiang-make-newline-indent)
 
 (provide 'hjiang-coding-style)
 

@@ -18,6 +18,10 @@ export CLOJURE_EXT=~/.clojure
 PATH=$PATH:~/.clojure/launchers/bash
 alias clj="rlwrap clj-env-dir"
 
+# JRuby
+# Install using install-jruby
+PATH=$PATH:$HOME/opt/jruby/bin
+
 case `hostname` in
   *.google.com) export IN_GOOGLE=1 ;;
   *) export IN_GOOGLE=0 ;;
@@ -36,3 +40,6 @@ if [ $IN_GOOGLE -eq 1 ]; then
 fi
 
 export PATH
+
+# Chrome for Linux changes this variable
+export http_proxy=''
