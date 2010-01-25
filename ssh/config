@@ -1,2 +1,5 @@
 Host *hjiang.net
   Port 11222
+
+Host localhost
+  Port 11222

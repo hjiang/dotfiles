@@ -35,3 +35,6 @@ if [ ! -f ~/bin/vcprompt ]; then
     mkdir -p ~/bin
     mv vcprompt ~/bin/
 fi
+
+# Initialize submodules
+cd ~/code/dotfiles/ git submodule update --init
