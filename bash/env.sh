@@ -43,3 +43,6 @@ export PATH
 
 # Chrome for Linux changes this variable
 export http_proxy=''
+
+export GEM_HOME=$HOME/opt/gems
+export PATH=$PATH:$HOME/opt/gems/bin
