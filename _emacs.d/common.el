@@ -67,23 +67,23 @@
 (require 'clojure-mode)
 
 ;; swank-clojure
-(add-to-list 'load-path "~/.emacs.d/vendor/swank-clojure/src/emacs")
+;; (add-to-list 'load-path "~/.emacs.d/vendor/swank-clojure/src/emacs")
 
-(setq swank-clojure-jar-path "~/.clojure/clojure.jar"
-      swank-clojure-extra-classpaths
-      (list
-       "~/.emacs.d/vendor/swank-clojure/src/main/clojure"
-       "~/.clojure/clojure-contrib.jar"))
-
-(require 'swank-clojure-autoload)
+;; (setq swank-clojure-jar-path "~/.clojure/clojure.jar"
+;;       swank-clojure-extra-classpaths
+;;       (list
+;;        "~/.emacs.d/vendor/swank-clojure/src/main/clojure"
+;;        "~/.clojure/clojure-contrib.jar"))
+;; 
+;; (require 'swank-clojure-autoload)
 
 ;; slime
-(eval-after-load "slime"
-  '(progn (slime-setup '(slime-repl))))
-
-(add-to-list 'load-path "~/.emacs.d/vendor/slime")
-(require 'slime)
-(slime-setup)
+;; (eval-after-load "slime"
+;;   '(progn (slime-setup '(slime-repl))))
+;; 
+;; (add-to-list 'load-path "~/.emacs.d/vendor/slime")
+;; (require 'slime)
+;; (slime-setup)
 
 ;; auctex
 (if (string= (getenv "X_JH_LATEX_INSTALLED") "1")
