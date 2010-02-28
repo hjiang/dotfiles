@@ -19,3 +19,6 @@
 [submodule "_emacs.d/vendor/swank-clojure"]
 	path = _emacs.d/vendor/swank-clojure
 	url = git://github.com/jochu/swank-clojure.git
+[submodule "_emacs/vendor/swank-clojure"]
+	path = _emacs/vendor/swank-clojure
+	url = git://github.com/jochu/swank-clojure.git
