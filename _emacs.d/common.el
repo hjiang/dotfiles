@@ -4,6 +4,9 @@
 (require 'uniquify)
 (require 'recentf)
 
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+(add-hook 'clojure-mode-hook    'paredit-mode)
+
 (load "~/.emacs.d/vendor/nxml-mode/rng-auto.el")
 (load "~/.emacs.d/vendor/nxhtml/autostart.el")
 

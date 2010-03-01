@@ -14,9 +14,9 @@ export LANG=en_US.UTF-8
 
 # Clojure
 # Install using ~/code/scripts/install_clojure.sh
-export CLOJURE_EXT=~/.clojure
-PATH=$PATH:~/.clojure/launchers/bash
-alias clj="rlwrap clj-env-dir"
+# export CLOJURE_EXT=~/.clojure
+# PATH=$PATH:~/.clojure/launchers/bash
+# alias clj="rlwrap clj-env-dir"
 
 # JRuby
 # Install using install-jruby
@@ -45,4 +45,4 @@ export PATH
 export http_proxy=''
 
 export GEM_HOME=$HOME/opt/gems
-export PATH=$PATH:$HOME/opt/gems/bin
+export PATH=$PATH:$HOME/opt/gems/bin:/Users/hjiang/opt/mongodb/bin
