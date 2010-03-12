@@ -10,12 +10,9 @@ set enc=utf-8
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("vms")
-  set nobackup " do not keep a backup file, use versions instead
-else
-  set backup " keep a backup file
-endif
-set history=50 " keep 50 lines of command line history
+set nobackup
+
+set history=100 " keep 50 lines of command line history
 set ruler      " show the cursor position all the time
 set showcmd    " display incomplete commands
 set incsearch  " do incremental searching
@@ -27,7 +24,6 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-set textwidth=80
 set et
 
 " Only do this part when compiled with support for autocommands.
@@ -43,11 +39,11 @@ if has("autocmd")
   augroup vimrcEx
   au!
 
-  " For all text files set 'textwidth' to 76 characters.
-  autocmd FileType text :setlocal textwidth=76
+  autocmd FileType text :setlocal textwidth=80
 
   autocmd FileType cweb,text,tex,latex :setlocal spell spelllang=en
   autocmd FileType c,cpp,java,js :set cindent
+  autocmd FileType c,cpp,java,js :set textwidth=80
   autocmd FileType c,cpp,java,js :set expandtab
   autocmd FileType css :set smartindent
   autocmd FileType py,haskell :set autoindent
@@ -105,49 +101,3 @@ let g:load_doxygen_syntax=1
 let g:proj_run1 = 'make'
 let g:proj_run2 = '!cmake .'
 let g:proj_run3 = 'make test'
-
-autocmd FileType c,cpp iabbrev for for (!cursor!; <+++>; <+++>) {<cr><+++><cr>}<Esc>:call search('!cursor!','b')<cr>cf!
-
-nnoremap <c-j> /<+.\{-1,}+><cr>c/+>/e<cr> 
-inoremap <c-j> <ESC>/<+.\{-1,}+><cr>c/+>/e<cr> 
-match Todo /<+.\++>/
-
-" No indent after C++ namespace
-setlocal nolisp
-setlocal noautoindent
-setlocal indentexpr=GetCppIndent(v:lnum)
-
-if exists("*GetCppIndent")
-    finish
-endif
-
-function! GetCppIndent(lnum)
-    let cindent = cindent(a:lnum)
-    if a:lnum == 1 | return cindent | endif
-
-    let pattern1 = 'namespace\s\+\S\*\s*{\s*\%$'
-    " pattern2 is used to match this case:
-    " class c : public b
-    "     { <-- cursor
-    let clspat = 'class\s\+\S\*\s*:\s*[^{]*'
-    let pattern2 = 'namespace\s\+\S\*\s*{\s*'.clspat.'\%$'
-
-    let lines = join(getline(max([ a:lnum - 10, 1]) , a:lnum-1), ' ')
-
-    if  lines =~ pattern1
-        return indent(CppFindOccurence('namespace', a:lnum))
-    elseif  lines =~ pattern2 && getline(a:lnum) =~ '^\s*{'
-        return indent(CppFindOccurence('class', a:lnum))
-    else
-        return cindent
-    endif
-endfunction
-
-function! CppFindOccurence(pattern, lnum)
-    for line in range(a:lnum-1,a:lnum-10,-1)
-        if getline(line) =~ a:pattern
-            return line
-        endif
-    endfor
-    return -1
-endfunction
