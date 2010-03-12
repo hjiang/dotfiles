@@ -1,5 +1,7 @@
 (load-file "~/code/dotfiles/emacs/functions.el")
 (load-file "~/code/dotfiles/emacs/coding-style.el")
+(if (string= (getenv "IN_GOOGLE") "1")
+    (load-file "~/code/dotfiles/emacs/google.el"))
 
 ;; Turn off generating *~ files
 (setq make-backup-files nil)
