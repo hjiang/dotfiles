@@ -21,6 +21,7 @@ setopt HIST_IGNORE_SPACE
 setopt APPEND_HISTORY # write history only when closing
 setopt EXTENDED_HISTORY # add more info
 setopt AUTO_CD
+setopt NO_NOMATCH
 
 # Other tabbing options
 # setopt NO_AUTO_MENU

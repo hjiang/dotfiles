@@ -41,6 +41,8 @@ unless given a prefix argument."
 (menu-bar-mode -1)
 (set-default 'indicate-empty-lines t)
 
+(if window-system (hjiang-gui-customization))
+
 (global-set-key "\M-?" 'help-command)
 (global-set-key "\C-h" 'delete-backward-char)
 (global-set-key "\C-cc" 'comment-region)

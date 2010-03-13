@@ -41,8 +41,7 @@ fi
 
 export PATH
 
-# Chrome for Linux changes this variable
-export http_proxy=''
-
 export GEM_HOME=$HOME/opt/gems
 export PATH=$PATH:$HOME/opt/gems/bin:/Users/hjiang/opt/mongodb/bin
+
+if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi

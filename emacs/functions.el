@@ -32,19 +32,17 @@
 (defun hjiang-gui-customization ()
   "Run the GUI customization stuff"
   (interactive)
-  (progn (require 'color-theme-autoloads "color-theme-autoloads")
-         (color-theme-initialize)
-         (color-theme-clarity)
-         (global-hl-line-mode t)
-         (set-face-background 'hl-line "#333")
-         ;; enable wheelmouse support by default
-         (mwheel-install)
-         ;; use extended compound-text coding for X clipboard
-         (set-selection-coding-system 'compound-text-with-extensions)
-         (tool-bar-mode -1)
-         (scroll-bar-mode -1)
-         (setq default-frame-alist
-               '((font . "Monospace-12")))))
+  (progn
+    (color-theme-zenburn)
+    ;; enable wheelmouse support by default
+    (mwheel-install)
+    ;; use extended compound-text coding for X clipboard
+    (set-selection-coding-system 'compound-text-with-extensions)
+    (tool-bar-mode -1)
+    (scroll-bar-mode -1)
+    (set-default-font "Monospace-10")
+    (setq default-frame-alist
+          '((font . "Monospace-10")))))
 
 (defun fill-sentence ()
   (interactive)
