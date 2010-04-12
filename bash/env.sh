@@ -45,3 +45,5 @@ export GEM_HOME=$HOME/opt/gems
 export PATH=$PATH:$HOME/opt/gems/bin:/Users/hjiang/opt/mongodb/bin
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
+
+export JH_ENV_ALREADY_SET=1
