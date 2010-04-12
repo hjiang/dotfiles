@@ -123,19 +123,18 @@
   (define-key c-mode-base-map "\C-m" 'newline-and-indent)
   (define-key c-mode-base-map [ret] 'newline-and-indent))
 
-;; (add-hook 'c-mode-common-hook 'hjiang-set-c-style)
-
 (defun hjiang-c-mode-common-hook ()
   "Customization for C/C++ mode"
   (hjiang-set-c-style)
   (hjiang-make-newline-indent)
   (add-hook 'write-file-hooks 'delete-trailing-whitespace t)
-  (setq show-trailing-whitespace t))
+  (setq show-trailing-whitespace t)
+  (highlight-80+-mode t))
 
 (defun hjiang-disallow-tab-indent ()
   "Don't use tabs to indent."
   (setq indent-tabs-mode nil))
-  
+
 
 (add-hook 'c-mode-common-hook 'hjiang-c-mode-common-hook)
 (add-hook 'c-mode-common-hook 'hjiang-make-newline-indent)
