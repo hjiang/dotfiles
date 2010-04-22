@@ -59,4 +59,6 @@ unless given a prefix argument."
 (global-set-key "\C-x\C-p" 'other-window-backward)
 (global-set-key "\C-x\C-o" 'other-window)
 
+(highlight-80+-mode t)
+
 (smart-split)
