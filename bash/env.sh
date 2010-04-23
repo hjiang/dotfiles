@@ -4,7 +4,7 @@ export MANPATH=/opt/local/share/man:$MANPATH
 
 PATH=~/code/scripts:~/bin:~/.gem/ruby/1.8/bin:$PATH
 
-export EDITOR=vim
+export EDITOR="emacsclient -a vim"
 export VISUAL=$EDITOR
 export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
