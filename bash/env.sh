@@ -12,6 +12,8 @@ export GIT_EDITOR=$EDITOR
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export CLICOLOR=1
+
 # Clojure
 # Install using ~/code/scripts/install_clojure.sh
 # export CLOJURE_EXT=~/.clojure
