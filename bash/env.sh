@@ -2,7 +2,7 @@
 PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-PATH=~/code/scripts:~/bin:~/.gem/ruby/1.8/bin:$PATH
+PATH=~/code/scripts:~/bin:~/.gem/ruby/1.8/bin:~/opt/android/tools/:$PATH
 
 export EDITOR="emacsclient -a vim"
 export VISUAL=$EDITOR
@@ -49,3 +49,5 @@ export PATH=$PATH:$HOME/opt/gems/bin:/Users/hjiang/opt/mongodb/bin
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
 export JH_ENV_ALREADY_SET=1
+
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

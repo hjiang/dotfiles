@@ -40,9 +40,9 @@
     (set-selection-coding-system 'compound-text-with-extensions)
     (tool-bar-mode -1)
     (scroll-bar-mode -1)
-    (set-default-font "Monospace-12")
+    (set-default-font "Monospace-10")
     (setq default-frame-alist
-          '((font . "Monospace-12")))))
+          '((font . "Monospace-10")))))
 
 (defun fill-sentence ()
   (interactive)

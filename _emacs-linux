@@ -9,7 +9,7 @@
   (package-initialize))
 
 (setq default-frame-alist 
-      '((font . "-dejavu-dejavu sans mono-medium-r-*-*-14-*-*-*-*-*-*-*")))
+      '((font . "-dejavu-dejavu sans mono-medium-r-*-*-12-*-*-*-*-*-*-*")))
 
 (add-to-list 'load-path "~/.emacs.d")
 
