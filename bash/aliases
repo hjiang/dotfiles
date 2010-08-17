@@ -1,3 +1,4 @@
 alias ll="ls -l"
 alias g="git status"
 alias gg="git commit -a -m "
+alias sd='svn diff --diff-cmd ~/code/scripts/sdm'
