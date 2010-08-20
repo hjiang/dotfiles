@@ -40,9 +40,11 @@
     (set-selection-coding-system 'compound-text-with-extensions)
     (tool-bar-mode -1)
     (scroll-bar-mode -1)
-    (set-default-font "Monospace-10")
-    (setq default-frame-alist
-          '((font . "Monospace-10")))))
+    (let ((myfont (if (eq system-type 'darwin) "Monospace-14"
+                    "Monospace-10")))
+      (set-default-font myfont)
+      (setq default-frame-alist
+            `((font . ,myfont))))))
 
 (defun fill-sentence ()
   (interactive)
