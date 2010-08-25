@@ -1,7 +1,28 @@
 (load-file "~/code/dotfiles/emacs/functions.el")
 (load-file "~/code/dotfiles/emacs/coding-style.el")
-(if (string= (getenv "IN_GOOGLE") "1")
-    (load-file "~/code/dotfiles/emacs/google.el"))
+(add-to-list 'load-path "~/code/dotfiles/emacs/eproject")
+
+;; For eproject
+(require 'eproject)
+(require 'eproject-extras)
+
+(define-project-type rake (generic) (look-for "Rakefile"))
+(add-hook 'rake-project-file-visit-hook
+          (lambda ()
+            (set (make-local-variable 'compile-command)
+                 (format "cd %s; rake " (eproject-root)))))
+
+(define-project-type ant (generic) (look-for "build.xml"))
+(add-hook 'ant-project-file-visit-hook
+          (lambda ()
+            (set (make-local-variable 'compile-command)
+                 (format "cd %s; ant " (eproject-root)))))
+
+(define-project-type maven (generic) (look-for "pom.xml"))
+(add-hook 'maven-project-file-visit-hook
+          (lambda ()
+            (set (make-local-variable 'compile-command)
+                 (format "cd %s; mvn " (eproject-root)))))
 
 ;; Turn off generating *~ files
 (setq make-backup-files nil)

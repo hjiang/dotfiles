@@ -16,3 +16,6 @@
 [submodule "_emacs.d/vendor/slime"]
 	path = _emacs.d/vendor/slime
 	url = git://git.boinkor.net/slime.git
+[submodule "emacs/eproject"]
+	path = emacs/eproject
+	url = git://github.com/jrockway/eproject.git
