@@ -24,6 +24,10 @@
             (set (make-local-variable 'compile-command)
                  (format "cd %s; mvn " (eproject-root)))))
 
+;; For some reason clojure-mode is not automatically loaded by ELPA on
+;;Mac
+(require 'clojure-mode)
+
 ;; Turn off generating *~ files
 (setq make-backup-files nil)
 

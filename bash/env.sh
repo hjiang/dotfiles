@@ -2,7 +2,7 @@
 PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-PATH=~/code/scripts:~/bin:~/.gem/ruby/1.8/bin:~/opt/android/tools/:$PATH
+PATH=~/code/scripts:~/bin:~/.gem/ruby/1.8/bin:~/opt/android/tools/:/usr/local/bin:$PATH
 
 export EDITOR="emacsclient -a vim"
 export VISUAL=$EDITOR
