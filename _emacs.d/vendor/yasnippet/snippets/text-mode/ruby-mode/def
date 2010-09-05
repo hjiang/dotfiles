@@ -1,6 +1,0 @@
-#name : def ... end
-#group : definitions
-# --
-def ${e}
-  $0
-end
