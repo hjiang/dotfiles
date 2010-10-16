@@ -3,5 +3,6 @@ export QT_IM_MODULE=ibus
 export XMODIFIERS="@im=ibus"
 
 xmodmap "$HOME/.xmodmaprc"
+nogfw.sh &
 ibus-daemon --xim &
 exec ck-launch-session startlxde
