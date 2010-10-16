@@ -42,6 +42,8 @@
 
 (setq thrift-indent-level 4)
 
+(setq-default tab-width 2)
+
 (setq auto-mode-alist
       (cons '("\\.[ch]$" . c++-mode) auto-mode-alist)) ; .c,.h files in C++ mode
 

@@ -28,6 +28,10 @@
 ;;Mac
 (require 'clojure-mode)
 
+;; Android
+(add-to-list 'load-path "~/code/dotfiles/emacs/android-mode")
+(require 'android-mode)
+(custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
 ;; Turn off generating *~ files
 (setq make-backup-files nil)
 
@@ -85,3 +89,4 @@ unless given a prefix argument."
 (global-set-key "\C-x\C-o" 'other-window)
 
 (smart-split)
+(server-start)
