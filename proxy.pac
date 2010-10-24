@@ -8,7 +8,11 @@ function FindProxyForURL(url, host) {
                 ".faqts.com",
                 ".bbcworldnews.com",
                 ".posterous.com",
-                ".mail-archive.com"];
+                ".mail-archive.com",
+                ".gawker.com",
+                ".youtube.com",
+                ".ytimg.com",
+                ".android.com"];
 
   for (var i = 0; i < npdoms.length; i++) {
     if (dnsDomainIs(host, npdoms[i])){
