@@ -14,7 +14,8 @@ function FindProxyForURL(url, host) {
                 ".ytimg.com",
                 ".android.com",
                 ".wikicdn.com",
-                ".bankofamerica.com"];
+                ".bankofamerica.com",
+                ".gawker.com"];
 
   for (var i = 0; i < npdoms.length; i++) {
     if (dnsDomainIs(host, npdoms[i])){
