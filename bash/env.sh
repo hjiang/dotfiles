@@ -24,6 +24,9 @@ export CLICOLOR=1
 # Install using install-jruby
 PATH=$PATH:$HOME/opt/jruby/bin
 
+CLOJURE_CONTRIB_JAR="/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar"
+[[ -e $CLOJURE_CONTRIB_JAR ]] && export CLASSPATH=$CLASSPATH:$CLOJURE_CONTRIB_JAR
+
 case `hostname` in
   *.google.com) export IN_GOOGLE=1 ;;
   *) export IN_GOOGLE=0 ;;
@@ -42,11 +45,6 @@ if [ $IN_GOOGLE -eq 1 ]; then
 fi
 
 export PATH
-
-export GEM_HOME=$HOME/opt/gems
-export PATH=$PATH:$HOME/opt/gems/bin:/Users/hjiang/opt/mongodb/bin
-
-if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
 export JH_ENV_ALREADY_SET=1
 
