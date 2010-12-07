@@ -1,4 +1,4 @@
-. ~/code/dotfiles/bash/env.sh
+source ~/code/dotfiles/bash/env.sh
 
 which latex > /dev/null
 if [[ $? = 0 ]]; then

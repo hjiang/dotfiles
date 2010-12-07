@@ -1,0 +1,9 @@
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS="@im=ibus"
+
+xmodmap "$HOME/.xmodmaprc"
+nogfw.sh &
+ibus-daemon --xim &
+tilda&
+exec ck-launch-session startxfce4

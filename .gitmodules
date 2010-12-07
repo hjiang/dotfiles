@@ -1,15 +1,6 @@
-[submodule "_emacs.d/vendor/magit"]
-	path = _emacs.d/vendor/magit
-	url = git://gitorious.org/magit/mainline.git
-[submodule "_emacs.d/vendor/jump"]
-	path = _emacs.d/vendor/jump
-	url = git://github.com/eschulte/jump.el.git
-[submodule "_emacs.d/vendor/org-mode"]
-	path = _emacs.d/vendor/org-mode
-	url = git://repo.or.cz/org-mode.git
-[submodule "_emacs.d/vendor/clojure-mode"]
-	path = _emacs.d/vendor/clojure-mode
-	url = git://github.com/jochu/clojure-mode.git
 [submodule "emacs/eproject"]
 	path = emacs/eproject
 	url = git://github.com/jrockway/eproject.git
+[submodule "emacs/android-mode"]
+	path = emacs/android-mode
+	url = git://github.com/remvee/android-mode.git
