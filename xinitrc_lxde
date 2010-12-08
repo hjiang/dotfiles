@@ -5,5 +5,4 @@ export XMODIFIERS="@im=ibus"
 xmodmap "$HOME/.xmodmaprc"
 nogfw.sh &
 ibus-daemon --xim &
-tilda&
 exec ck-launch-session startxfce4
