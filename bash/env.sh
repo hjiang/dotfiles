@@ -22,6 +22,15 @@ export LANG=en_US.UTF-8
 
 export CLICOLOR=1
 
+CLOJURE_CONTRIB_JAR="/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar"
+[[ -e $CLOJURE_CONTRIB_JAR ]] && export CLASSPATH=$CLASSPATH:$CLOJURE_CONTRIB_JAR
+
+MACTEX_BASIC_BIN=/usr/local/texlive/2010basic/bin/universal-darwin/
+
+if [[ -d ${MACTEX_BASIC_BIN} ]]; then
+    PATH=${MACTEX_BASIC_BIN}:$PATH 
+fi
+
 export PATH
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then

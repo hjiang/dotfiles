@@ -24,6 +24,13 @@
             (set (make-local-variable 'compile-command)
                  (format "cd %s; mvn " (eproject-root)))))
 
+(define-project-type lein (generic) (look-for "project.clj"))
+(add-hook 'lein-project-file-visit-hook
+          (lambda ()
+            (set (make-local-variable 'compile-command)
+                 (format "cd %s; lein " (eproject-root)))))
+
+
 ;; For some reason clojure-mode is not automatically loaded by ELPA on
 ;;Mac
 (require 'clojure-mode)
@@ -87,6 +94,10 @@ unless given a prefix argument."
 (global-set-key "\C-xp" 'other-window-backward)
 (global-set-key "\C-x\C-p" 'other-window-backward)
 (global-set-key "\C-x\C-o" 'other-window)
+
+(when (equal system-type 'darwin)
+  (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+  (push "/usr/local/bin" exec-path))
 
 (smart-split)
 (server-start)
