@@ -39,6 +39,6 @@ fi
 
 export JH_ENV_ALREADY_SET=1
 
-export auto_proxy=file:///home/hjiang/code/dotfiles/proxy.pac
+# export auto_proxy=file:///home/hjiang/code/dotfiles/proxy.pac
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
