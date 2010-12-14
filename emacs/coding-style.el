@@ -45,7 +45,8 @@
 (setq-default tab-width 2)
 
 (setq auto-mode-alist
-      (cons '("\\.[ch]$" . c++-mode) auto-mode-alist)) ; .c,.h files in C++ mode
+      (cons '("\.js$" . js2-mode)
+       (cons '("\\.[ch]$" . c++-mode) auto-mode-alist))) ; .c,.h in C++ mode
 
 (defconst hjiang-c-style
   `((c-tab-always-indent . t)
