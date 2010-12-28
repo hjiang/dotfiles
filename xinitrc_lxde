@@ -6,4 +6,4 @@ export GNOME_DESKTOP_SESSION_ID=Default
 xmodmap "$HOME/.xmodmaprc"
 ibus-daemon --xim &
 nogfw.sh &
-exec ck-launch-session startxfce4
+exec ck-launch-session gnome-session
