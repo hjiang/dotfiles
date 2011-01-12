@@ -42,11 +42,13 @@
 
 (setq thrift-indent-level 4)
 
+(setq css-indent-level 4)
+
 (setq-default tab-width 2)
 
 (setq auto-mode-alist
-      (cons '("\.js$" . js2-mode)
-       (cons '("\\.[ch]$" . c++-mode) auto-mode-alist))) ; .c,.h in C++ mode
+      (cons '("\\.less$" . css-mode) (cons '("\\.js$" . js2-mode)
+       (cons '("\\.[ch]$" . c++-mode) auto-mode-alist)))) ; .c,.h in C++ mode
 
 (defconst hjiang-c-style
   `((c-tab-always-indent . t)
@@ -145,6 +147,10 @@
 (add-hook 'clojure-mode 'hjiang-disallow-tab-indent)
 
 (setq-default indent-tabs-mode nil)
+
+(defun set-java-style ()
+  (setq c-basic-offset 4))
+(add-hook 'java-mode-hook 'set-java-style)
 
 (provide 'hjiang-coding-style)
 
