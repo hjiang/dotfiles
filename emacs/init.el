@@ -38,7 +38,8 @@
 ;; Android
 (add-to-list 'load-path "~/code/dotfiles/emacs/android-mode")
 (require 'android-mode)
-(custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
+(custom-set-variables '(android-mode-sdk-dir "/opt/android-sdk"))
+
 ;; Turn off generating *~ files
 (setq make-backup-files nil)
 

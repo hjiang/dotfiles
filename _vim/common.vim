@@ -101,3 +101,5 @@ let g:load_doxygen_syntax=1
 let g:proj_run1 = 'make'
 let g:proj_run2 = '!cmake .'
 let g:proj_run3 = 'make test'
+
+let g:AutoComplPop_NotEnableAtStartup = 1
