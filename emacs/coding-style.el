@@ -42,7 +42,7 @@
 
 (setq thrift-indent-level 4)
 
-(setq css-indent-level 4)
+(setq css-indent-level 2)
 
 (setq-default tab-width 2)
 
