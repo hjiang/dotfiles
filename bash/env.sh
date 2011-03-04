@@ -10,7 +10,7 @@ fi
 PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-PATH=~/code/scripts:~/bin:~/opt/android/tools/:/usr/local/bin:$PATH
+PATH=~/code/scripts:~/bin:~/opt/android/tools/:/var/lib/gems/1.8/bin:/usr/local/bin:$PATH
 
 export EDITOR="emacsclient -a vim"
 export VISUAL=$EDITOR
