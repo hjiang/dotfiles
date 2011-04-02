@@ -10,7 +10,7 @@ fi
 PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-PATH=~/code/scripts:~/bin:~/opt/android/tools/:/usr/local/bin:$PATH
+PATH=/usr/local/Cellar/ruby/1.9.2-p136/bin:~/code/scripts:~/bin:~/opt/android/tools/:/usr/local/bin:$PATH
 
 export EDITOR="emacsclient -a vim"
 export VISUAL=$EDITOR
@@ -38,6 +38,8 @@ if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then
 fi
 
 export JH_ENV_ALREADY_SET=1
+
+export NODE_PATH=/usr/local/lib/node
 
 # export auto_proxy=file:///home/hjiang/code/dotfiles/proxy.pac
 
