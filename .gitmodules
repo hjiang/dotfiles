@@ -1,6 +1,3 @@
 [submodule "emacs/eproject"]
 	path = emacs/eproject
 	url = git://github.com/jrockway/eproject.git
-[submodule "emacs/android-mode"]
-	path = emacs/android-mode
-	url = git://github.com/remvee/android-mode.git
