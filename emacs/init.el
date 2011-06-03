@@ -78,7 +78,21 @@ unless given a prefix argument."
 (menu-bar-mode -1)
 (set-default 'indicate-empty-lines t)
 
-(if window-system (hjiang-gui-customization))
+;; (if window-system (hjiang-gui-customization))
+(zenburn)
+(setq ring-bell-function
+      (lambda ()
+        (call-process-shell-command "xset led 3; xset -led 3" nil 0 nil)))
+
+;; (set-default-font "Inconsolata-11")
+;; (setq default-frame-alist '((font . "Inconsolata-11")))
+
+;; enable wheelmouse support by default
+(mwheel-install)
+;; use extended compound-text coding for X clipboard
+(set-selection-coding-system 'compound-text-with-extensions)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 
 (global-set-key "\M-?" 'help-command)
 (global-set-key "\C-h" 'delete-backward-char)

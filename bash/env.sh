@@ -41,6 +41,8 @@ export JH_ENV_ALREADY_SET=1
 
 export NODE_PATH=/usr/local/lib/node
 
+# export TERM=xterm-256color
+
 # export auto_proxy=file:///home/hjiang/code/dotfiles/proxy.pac
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
