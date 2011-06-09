@@ -31,6 +31,10 @@ if [[ -d ${MACTEX_BASIC_BIN} ]]; then
     PATH=${MACTEX_BASIC_BIN}:$PATH 
 fi
 
+if [[ -d "${HOME}/code/onycloud/tools/bin" ]]; then
+    PATH="${HOME}/code/onycloud/tools/bin":$PATH 
+fi
+
 export PATH
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then
