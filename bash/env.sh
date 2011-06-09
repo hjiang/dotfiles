@@ -31,6 +31,10 @@ if [[ -d ${MACTEX_BASIC_BIN} ]]; then
     PATH=${MACTEX_BASIC_BIN}:$PATH 
 fi
 
+if [[ -d "${HOME}/code/onycloud/tools/bin" ]]; then
+    PATH="${HOME}/code/onycloud/tools/bin":$PATH 
+fi
+
 export PATH
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then
@@ -40,6 +44,8 @@ fi
 export JH_ENV_ALREADY_SET=1
 
 export NODE_PATH=/usr/local/lib/node
+
+# export TERM=xterm-256color
 
 # export auto_proxy=file:///home/hjiang/code/dotfiles/proxy.pac
 

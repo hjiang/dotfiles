@@ -16,7 +16,7 @@
   (defun smart-split-helper (w)
     "Helper function to split a given window into two, the first of which has
     80 columns."
-    (if (> (window-width w) 81)
+    (if (> (window-width w) 140)
       (let ((w2 (split-window w 82 t)))
         (smart-split-helper w2))))
     (smart-split-helper nil))
@@ -33,7 +33,7 @@
   "Run the GUI customization stuff"
   (interactive)
   (progn
-    (color-theme-zenburn)
+    (zenburn)
     ;; enable wheelmouse support by default
     (mwheel-install)
     ;; use extended compound-text coding for X clipboard
@@ -41,7 +41,7 @@
     (tool-bar-mode -1)
     (scroll-bar-mode -1)
     (let ((myfont (if (eq system-type 'darwin) "Monospace-14"
-                    "Monospace-10")))
+                    "Monospace-9")))
       (set-default-font myfont)
       (setq default-frame-alist
             `((font . ,myfont))))))
