@@ -11,7 +11,7 @@
 "	    for OpenVMS:  sys$login:.gvimrc
 
 " Make external commands work through a pipe instead of a pseudo-tty
-set noguipty
+" set noguipty
 
 " set the X11 font to use
 if has("gui_win32")

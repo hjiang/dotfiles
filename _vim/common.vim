@@ -1,19 +1,19 @@
-
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
 set nospell
 
 set enc=utf-8
+
+syntax on
+colorscheme desert
+
+set nospell
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 set nobackup
 
+set ruler " show the cursor position all the time
 set history=100 " keep 50 lines of command line history
-set ruler      " show the cursor position all the time
 set showcmd    " display incomplete commands
 set incsearch  " do incremental searching
 
@@ -94,7 +94,6 @@ set grepprg=grep\ -nH\ $*
 let g:Tex_ViewRule_pdf = 'open'
 let g:Tex_ViewRule_ps = 'open'
 let g:Tex_ViewRule_dvi = 'open'
-
 
 let g:load_doxygen_syntax=1
 
