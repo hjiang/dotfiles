@@ -22,9 +22,6 @@ export LANG=en_US.UTF-8
 
 export CLICOLOR=1
 
-CLOJURE_CONTRIB_JAR="/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar"
-[[ -e $CLOJURE_CONTRIB_JAR ]] && export CLASSPATH=$CLASSPATH:$CLOJURE_CONTRIB_JAR
-
 MACTEX_BASIC_BIN=/usr/local/texlive/2010basic/bin/universal-darwin/
 
 if [[ -d ${MACTEX_BASIC_BIN} ]]; then
@@ -37,6 +34,10 @@ fi
 
 if [[ -d "${HOME}/.cabal/bin" ]]; then
     PATH="${HOME}/.cabal/bin":$PATH
+fi
+
+if [[ -d "/usr/local/Cellar/ruby/1.9.2-p180/bin" ]]; then
+    PATH="/usr/local/Cellar/ruby/1.9.2-p180/bin":$PATH
 fi
 
 export PATH
