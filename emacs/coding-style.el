@@ -26,6 +26,10 @@
 (setq auto-mode-alist (cons '("\\.[ch]$" . c++-mode)
                             auto-mode-alist)) ; .c,.h in C++ mode
 
+(load-file "${HOME}/code/dotfiles/emacs/puppet-mode.el")
+(setq auto-mode-alist (cons '("\\.pp$" . puppet-mode)
+                            auto-mode-alist))
+
 (defun hjiang-disallow-tab-indent ()
   "Don't use tabs to indent."
   (setq indent-tabs-mode nil))

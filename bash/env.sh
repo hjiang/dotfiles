@@ -28,11 +28,15 @@ CLOJURE_CONTRIB_JAR="/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 MACTEX_BASIC_BIN=/usr/local/texlive/2010basic/bin/universal-darwin/
 
 if [[ -d ${MACTEX_BASIC_BIN} ]]; then
-    PATH=${MACTEX_BASIC_BIN}:$PATH 
+    PATH=${MACTEX_BASIC_BIN}:$PATH
 fi
 
 if [[ -d "${HOME}/code/onycloud/tools/bin" ]]; then
-    PATH="${HOME}/code/onycloud/tools/bin":$PATH 
+    PATH="${HOME}/code/onycloud/tools/bin":$PATH
+fi
+
+if [[ -d "${HOME}/.cabal/bin" ]]; then
+    PATH="${HOME}/.cabal/bin":$PATH
 fi
 
 export PATH
