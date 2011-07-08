@@ -8,4 +8,3 @@ function! DiffWithFileFromDisk()
    exec 'edit '.filename
    diffthis
 endfunction
-
