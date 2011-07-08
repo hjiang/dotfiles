@@ -50,7 +50,3 @@ export NODE_PATH=/usr/local/lib/node
 # export auto_proxy=file:///home/hjiang/code/dotfiles/proxy.pac
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
-export EPREFIX="/opt/gentoo"
-export PATH="$EPREFIX/usr/bin:$EPREFIX/bin:$EPREFIX/tmp/usr/bin:$EPREFIX/tmp/bin:$PATH"
-export CHOST=x86_64-apple-darwin10

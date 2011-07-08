@@ -86,6 +86,11 @@ unless given a prefix argument."
 
 ;; (set-default-font "Inconsolata-11")
 ;; (setq default-frame-alist '((font . "Inconsolata-11")))
+(let ((myfont (if (eq system-type 'darwin) "Inconsolata-15"
+                    "Inconsolata-11")))
+      (set-default-font myfont)
+      (setq default-frame-alist
+            `((font . ,myfont))))
 
 ;; enable wheelmouse support by default
 (mwheel-install)
