@@ -1,0 +1,8 @@
+source ~/code/dotfiles/bash/env.sh
+
+which latex > /dev/null
+if [[ $? = 0 ]]; then
+   export X_JH_LATEX_INSTALLED=1
+else
+   export X_JH_LATEX_INSTALLED=0
+fi

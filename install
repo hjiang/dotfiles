@@ -1,0 +1,36 @@
+#!/bin/sh
+
+backup_and_link() {
+    target=$1
+    link=$2
+    timestamp=`date +%Y-%m-%d-%H-%M-%N`
+    if [ -e $link ]; then
+        mv "$link" "${link}.bak.$timestamp"
+    fi
+    if [ -L $link ] && [ ! -e $link ]; then
+        rm -rf "$link"
+    fi
+    ln -s "$target" "$link"
+}
+
+DOTFILES=~/code/dotfiles
+git clone git://github.com/technomancy/emacs-starter-kit.git $HOME/.emacs.d
+backup_and_link $DOTFILES/emacs/init.el ~/.emacs.d/hjiang.el
+backup_and_link $DOTFILES/bash/bashrc ~/.bashrc
+backup_and_link $DOTFILES/zshrc ~/.zshrc
+backup_and_link $DOTFILES/zsh/env ~/.zshenv
+backup_and_link $DOTFILES/screenrc ~/.screenrc
+
+# install vcprompt
+if [ ! -f ~/bin/vcprompt ]; then
+    cd /tmp
+    wget http://vc.gerg.ca/hg/vcprompt/archive/tip.tar.gz
+    tar -xzf tip.tar.gz
+    cd vcprompt*
+    make
+    mkdir -p ~/bin
+    mv vcprompt ~/bin/
+fi
+
+# Initialize submodules
+cd ~/code/dotfiles/ git submodule update --init
