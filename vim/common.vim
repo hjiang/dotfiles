@@ -26,52 +26,40 @@ endif
 
 set et
 
-" Only do this part when compiled with support for autocommands.
-if has("autocmd")
+" Enable file type detection.
+" Use the default filetype settings, so that mail gets 'tw' set to 72,
+" 'cindent' is on in C files, etc.
+" Also load indent files, to automatically do language-dependent indenting.
+filetype plugin indent on
 
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
+set tabstop=2
+set shiftwidth=4
+set textwidth=80
+set expandtab
 
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
+autocmd FileType text :setlocal textwidth=80
 
-  autocmd FileType text :setlocal textwidth=80
+autocmd FileType cweb,text,tex,latex :setlocal spell spelllang=en
+autocmd FileType c,cpp,java,js :set cindent
+autocmd FileType css :set smartindent
+autocmd FileType py,haskell :set autoindent
 
-  autocmd FileType cweb,text,tex,latex :setlocal spell spelllang=en
-  autocmd FileType c,cpp,java,js :set cindent
-  autocmd FileType c,cpp,java,js :set textwidth=80
-  autocmd FileType c,cpp,java,js :set expandtab
-  autocmd FileType css :set smartindent
-  autocmd FileType py,haskell :set autoindent
+autocmd FileType c,cpp :compiler gcc
+autocmd FileType java :compiler ant
 
-  autocmd FileType c,cpp :compiler gcc
-  autocmd FileType java :compiler ant
+autocmd FileType tex,lua,c,cpp,java,haskell,lhaskell,python,rb :set expandtab
+autocmd FileType tex :set foldmethod=marker
+autocmd FileType haskell :set foldmethod=syntax
 
-  autocmd FileType tex,lua,c,cpp,java,haskell,lhaskell,python,rb :set expandtab
-  autocmd FileType tex :set foldmethod=marker
-  autocmd FileType haskell :set foldmethod=syntax
-
-  autocmd FileType c,cpp,java,js,py,haskell match ErrorMsg /\%>80v.\+/
-  autocmd FileType tex,lua,c,cpp,java,haskell,lhaskell,python,rb :set expandtab
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-
-  augroup END
-
-else
-
-set smartindent		" always set autoindenting on
-
-endif " has("autocmd")
+autocmd FileType c,cpp,java,js,py,haskell match ErrorMsg /\%>80v.\+/
+autocmd FileType tex,lua,c,cpp,java,haskell,lhaskell,python,rb :set expandtab
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+autocmd BufReadPost *
+                        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+                        \   exe "normal g`\"" |
+                        \ endif
 
 set enc=utf-8
 "set wrap
