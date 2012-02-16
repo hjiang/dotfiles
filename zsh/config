@@ -26,7 +26,7 @@ setopt nullglob
 
 # Other tabbing options
 # setopt NO_AUTO_MENU
-# setopt BASH_AUTO_LIST
+setopt BASH_AUTO_LIST
 
 #############################
 # Variables

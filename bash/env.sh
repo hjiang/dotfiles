@@ -36,20 +36,7 @@ if [[ -d "${HOME}/.cabal/bin" ]]; then
     PATH="${HOME}/.cabal/bin":$PATH
 fi
 
-if [[ -d "/usr/local/Cellar/ruby/1.9.2-p180/bin" ]]; then
-    PATH="/usr/local/Cellar/ruby/1.9.2-p180/bin":$PATH
-fi
-
-export GEM_HOME=$HOME/.gem_home
-PATH="$GEM_HOME/bin":$PATH
-
-# For python installed by Homebrew
-PATH=/usr/local/share/python:$PATH
-
 export PATH
-
-export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
-
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then
     source $HOME/.rvm/scripts/rvm
@@ -60,7 +47,5 @@ export JH_ENV_ALREADY_SET=1
 export NODE_PATH=/usr/local/lib/node
 
 # export TERM=xterm-256color
-
-# export auto_proxy=file:///home/hjiang/code/dotfiles/proxy.pac
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

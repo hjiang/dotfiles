@@ -1,28 +1,62 @@
-;; To use, put this in your .emacs:
-;;
-;;    (load-file "${HOME}/.emacs.d/coding-style.el")
-;;
-;; There are some optional features in here as well:
-;;
-;; If you want the RETURN key to go to the next line and space over
-;; to the right place, add this to your .emacs right after the load-file:
-;;
-;;    (add-hook 'c-mode-common-hook 'hjiang-make-newline-indent)
-;;
-;; Another feature you may find handy is the Auto mode: once editing a
-;; file, use C-c C-a to have Emacs automatically do some newlines.
-;; (This annoys most people but it's sorta neat to try.  It's really
-;; bad when you're *editing* code but it may be useful when writing
-;; new code.)  There's also a Hungry mode: C-c C-d to have the
-;; backspace key eat up lots of whitespace at a time.  This annoys
-;; some people but it's worth a try.  Both keys can be used again
-;; to turn the mode off.  You'll see in the modeline C++/a or C++/h when
-;; the mode is turned on.
-;;
-;; Also useful, perhaps, is fill mode.  In theory, when you use M-q,
-;; it will word-wrap your comment paragraphs.
+(setq js2-basic-offset 2)
 
-(load-file "${HOME}/code/onycloud/tools/emacs/coding-style.el")
+(setq ruby-indent-level 2)
+
+(setq css-indent-level 4)
+
+(setq-default tab-width 2)
+
+(defun map-filetype (pattern mode)
+  "Map from filename patterns to major modes"
+  (setq auto-mode-alist (cons `(,pattern . ,mode) auto-mode-alist)))
+
+(map-filetype "\\.less$" 'css-mode)
+(map-filetype "\\.js$" 'js2-mode)
+
+;; Make Emacs use "reindent-then-newline-and-indent" when you hit the
+;; Enter key so that you don't need to keep using TAB to align
+;; yourself when coding.
+(global-set-key (kbd "<RET>") 'reindent-then-newline-and-indent)
+
+(defun pretty-js-function ()
+  (font-lock-add-keywords
+   'nil `(("\\(function *\\)("
+           (0 (progn (compose-region (match-beginning 1)
+                                     (match-end 1) "ƒ")
+                     nil))))))
+
+(defun onyx-html-font-lock ()
+  (font-lock-add-keywords nil '(("}}\\|{{" . font-lock-constant-face)))
+  (font-lock-add-keywords
+   nil '(("#if\\|/if\\|else\\|bindAttr" . font-lock-keyword-face)))
+  (font-lock-add-keywords
+   nil '(("#collection\\|/collection\\|#view\\|/view" .
+          font-lock-keyword-face))))
+
+(defun code-hook ()
+  "Customization for writing code"
+  (add-hook 'write-file-hooks 'delete-trailing-whitespace t)
+  (setq show-trailing-whitespace t)
+  (highlight-80+-mode t)
+  (setq indent-tabs-mode nil))
+
+(add-hook 'clojure-mode-hook 'code-hook)
+(add-hook 'ruby-mode-hook 'code-hook)
+(add-hook 'css-mode-hook 'code-hook)
+(add-hook 'js2-mode-hook 'pretty-js-function)
+
+(when (require 'rainbow-delimiters nil 'noerror)
+  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
+
+(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
+(add-hook 'slime-repl-mode-hook
+          '(lambda ()
+             (highlight-lines-matching-regexp
+              "\s+\\(onyx\\|onycloud\\|onybooks\\|trakr\\)" "hi-green-b")
+             (paredit-mode t)))
+
+(setq-default indent-tabs-mode nil)
+
 (setq auto-mode-alist (cons '("\\.[ch]$" . c++-mode)
                             auto-mode-alist)) ; .c,.h in C++ mode
 
@@ -37,4 +71,3 @@
 (add-hook 'c-mode-common-hook 'code-hook)
 
 (provide 'hjiang-coding-style)
-

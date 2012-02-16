@@ -58,3 +58,36 @@
       (if (and ix (equal "LaTeX" (substring mode-name ix)))
           (LaTeX-fill-region-as-paragraph beg (point))
         (fill-region-as-paragraph beg (point))))))
+
+;;; some patch to clojure-test-mode
+(require 'clojure-mode)
+(require 'clojure-test-mode)
+
+(setq clojure-test-ns-segment-position 3)
+
+(defun clojure-jump-to-test ()
+  "Jump from implementation file to test."
+  (interactive)
+  (find-file (format "%s/test/%s.clj"
+                     (locate-dominating-file buffer-file-name "src/")
+                     (replace-regexp-in-string "/test$" "_test"
+                                               (clojure-test-for
+                                                (clojure-find-ns))))))
+
+(defun clojure-test-jump-to-implementation ()
+  "Jump from test file to implementation."
+  (interactive)
+  (find-file (format "%s/src/%s.clj"
+                     (locate-dominating-file buffer-file-name "src/")
+                     (replace-regexp-in-string
+                      "_test$" ""
+                      (clojure-test-implementation-for
+                       (clojure-find-package))))))
+
+(defun clojure-test-maybe-enable ()
+  "Enable clojure-test-mode if the current buffer contains a namespace
+with a \"-test\" bit on it."
+  (let ((ns (clojure-find-package))) ; defined in clojure-mode.el
+    (when (search "-test" ns)
+      (save-window-excursion
+        (clojure-test-mode t)))))
