@@ -6,11 +6,10 @@ if [[ -d /opt/android-sdk ]]; then
     export ANDROID_HOME=/opt/android-sdk
 fi
 
-# For MacPorts
-PATH=/opt/local/bin:/opt/local/sbin:$PATH
+PATH=/usr/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-PATH=/usr/local/Cellar/ruby/1.9.2-p136/bin:~/code/scripts:~/bin:~/opt/android/tools/:/usr/local/bin:$PATH
+PATH=~/code/scripts:~/bin:~/opt/android/tools:/usr/local/bin:$PATH
 
 export EDITOR="emacsclient -a vim"
 export VISUAL=$EDITOR
@@ -22,7 +21,7 @@ export LANG=en_US.UTF-8
 
 export CLICOLOR=1
 
-MACTEX_BASIC_BIN=/usr/local/texlive/2010basic/bin/universal-darwin/
+MACTEX_BASIC_BIN=/usr/local/texlive/2010basic/bin/universal-darwin
 
 if [[ -d ${MACTEX_BASIC_BIN} ]]; then
     PATH=${MACTEX_BASIC_BIN}:$PATH
