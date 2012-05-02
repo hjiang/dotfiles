@@ -35,6 +35,10 @@ if [[ -d "${HOME}/.cabal/bin" ]]; then
     PATH="${HOME}/.cabal/bin":$PATH
 fi
 
+if [[ -d "/usr/local/Cellar/ruby/1.9.3-p125/bin" ]]; then
+    PATH="/usr/local/Cellar/ruby/1.9.3-p125/bin:$PATH"
+fi
+
 export PATH
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then
@@ -43,7 +47,7 @@ fi
 
 export JH_ENV_ALREADY_SET=1
 
-export NODE_PATH=/usr/local/lib/node
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node:/usr/local/lib/node_modules
 
 # export TERM=xterm-256color
 
