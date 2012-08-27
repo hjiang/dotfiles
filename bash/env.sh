@@ -39,6 +39,10 @@ if [[ -d "/usr/local/Cellar/ruby/1.9.3-p125/bin" ]]; then
     PATH="/usr/local/Cellar/ruby/1.9.3-p125/bin:$PATH"
 fi
 
+if [[ -d "$HOME/code/arcanist/bin" ]]; then
+    PATH="$HOME/code/arcanist/bin:$PATH"
+fi
+
 export PATH
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then

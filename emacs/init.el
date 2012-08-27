@@ -1,44 +1,27 @@
+(require 'package)
+(add-to-list 'package-archives
+                          '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(package-initialize)
+
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
+;; Add in your own as you wish:
+(defvar my-packages
+  '(starter-kit starter-kit-lisp starter-kit-bindings clojure-mode
+                clojure-test-mode clojure-project-mode color-theme zenburn-theme)
+  "A list of packages to ensure are installed at launch.")
+
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+      (package-install p)))
+
 (load-file "~/code/dotfiles/emacs/functions.el")
 (load-file "~/code/dotfiles/emacs/coding-style.el")
-(add-to-list 'load-path "~/code/dotfiles/emacs/eproject")
-
-;; For eproject
-(require 'eproject)
-(require 'eproject-extras)
-
-(define-project-type rake (generic) (look-for "Rakefile"))
-(add-hook 'rake-project-file-visit-hook
-          (lambda ()
-            (set (make-local-variable 'compile-command)
-                 (format "cd %s; rake " (eproject-root)))))
-
-(define-project-type ant (generic) (look-for "build.xml"))
-(add-hook 'ant-project-file-visit-hook
-          (lambda ()
-            (set (make-local-variable 'compile-command)
-                 (format "cd %s; ant " (eproject-root)))))
-
-(define-project-type maven (generic) (look-for "pom.xml"))
-(add-hook 'maven-project-file-visit-hook
-          (lambda ()
-            (set (make-local-variable 'compile-command)
-                 (format "cd %s; mvn " (eproject-root)))))
-
-(define-project-type lein (generic) (look-for "project.clj"))
-(add-hook 'lein-project-file-visit-hook
-          (lambda ()
-            (set (make-local-variable 'compile-command)
-                 (format "cd %s; lein " (eproject-root)))))
-
 
 ;; For some reason clojure-mode is not automatically loaded by ELPA on
 ;;Mac
 (require 'clojure-mode)
-
-;; Android
-(add-to-list 'load-path "~/code/dotfiles/emacs/android-mode")
-(require 'android-mode)
-(custom-set-variables '(android-mode-sdk-dir "/opt/android-sdk"))
 
 ;; Turn off generating *~ files
 (setq make-backup-files nil)
@@ -79,18 +62,19 @@ unless given a prefix argument."
 (set-default 'indicate-empty-lines t)
 
 ;; (if window-system (hjiang-gui-customization))
-(zenburn)
+(load-theme 'zenburn t)
+
 (setq ring-bell-function
       (lambda ()
         (call-process-shell-command "xset led 3; xset -led 3" nil 0 nil)))
 
 ;; (set-default-font "Inconsolata-11")
 ;; (setq default-frame-alist '((font . "Inconsolata-11")))
-(let ((myfont (if (eq system-type 'darwin) "Inconsolata-15"
-                    "Inconsolata-11")))
-      (set-default-font myfont)
-      (setq default-frame-alist
-            `((font . ,myfont))))
+;; (let ((myfont (if (eq system-type 'darwin) "Inconsolata-15"
+;;                     "Inconsolata-11")))
+;;       (set-default-font myfont)
+;;       (setq default-frame-alist
+;;             `((font . ,myfont))))
 
 ;; enable wheelmouse support by default
 (mwheel-install)
@@ -121,3 +105,15 @@ unless given a prefix argument."
 
 (smart-split)
 (server-start)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("71b172ea4aad108801421cc5251edb6c792f3adbaecfa1c52e94e3d99634dee7" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
