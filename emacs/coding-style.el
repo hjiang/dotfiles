@@ -44,7 +44,9 @@
 (add-hook 'ruby-mode-hook 'code-hook)
 (add-hook 'css-mode-hook 'code-hook)
 (add-hook 'js2-mode-hook 'pretty-js-function)
+(add-hook 'c-mode-common-hook 'code-hook)
 
+(add-hook 'clojure-mode-hook '(lambda () (paredit-mode t)))
 (when (require 'rainbow-delimiters nil 'noerror)
   (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
 
@@ -67,7 +69,5 @@
 (defun hjiang-disallow-tab-indent ()
   "Don't use tabs to indent."
   (setq indent-tabs-mode nil))
-
-(add-hook 'c-mode-common-hook 'code-hook)
 
 (provide 'hjiang-coding-style)
