@@ -43,6 +43,9 @@ if [[ -d "$HOME/code/arcanist/bin" ]]; then
     PATH="$HOME/code/arcanist/bin:$PATH"
 fi
 
+RUBY_BINDIR=`brew info ruby|grep /bin|tr -d ' '`
+PATH=$RUBY_BINDIR:$PATH
+
 export PATH
 
 if [[ -s /home/hjiang/.rvm/scripts/rvm ]] ; then
@@ -52,6 +55,8 @@ fi
 export JH_ENV_ALREADY_SET=1
 
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node:/usr/local/lib/node_modules
+
+export MEIWEISQ_PASSWORD=''
 
 # export TERM=xterm-256color
 
