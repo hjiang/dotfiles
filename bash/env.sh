@@ -9,7 +9,7 @@ fi
 PATH=/usr/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-PATH=~/code/scripts:~/bin:~/opt/android/tools:/usr/local/bin:$PATH
+PATH=~/code/scripts:~/bin:/usr/local/bin:$PATH
 
 export EDITOR="emacsclient -a vim"
 export VISUAL=$EDITOR
@@ -41,6 +41,10 @@ fi
 
 if [[ -d "$HOME/code/arcanist/bin" ]]; then
     PATH="$HOME/code/arcanist/bin:$PATH"
+fi
+
+if [[ -d "/usr/local/share/npm/bin" ]]; then
+    PATH="/usr/local/share/npm/bin:$PATH"
 fi
 
 RUBY_BINDIR=`brew info ruby|grep /bin|tr -d ' '`
