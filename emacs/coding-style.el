@@ -16,7 +16,7 @@
 ;; Make Emacs use "reindent-then-newline-and-indent" when you hit the
 ;; Enter key so that you don't need to keep using TAB to align
 ;; yourself when coding.
-(global-set-key (kbd "<RET>") 'reindent-then-newline-and-indent)
+;; (global-set-key (kbd "<RET>") 'reindent-then-newline-and-indent)
 
 (defun pretty-js-function ()
   (font-lock-add-keywords
