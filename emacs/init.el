@@ -9,7 +9,8 @@
 ;; Add in your own as you wish:
 (defvar my-packages
   '(starter-kit starter-kit-lisp starter-kit-bindings clojure-mode
-                clojure-test-mode clojure-project-mode color-theme zenburn-theme)
+                clojure-test-mode clojure-project-mode color-theme
+                zenburn-theme nrepl rainbow-delimiters)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -98,6 +99,11 @@ unless given a prefix argument."
 (global-set-key "\C-xp" 'other-window-backward)
 (global-set-key "\C-x\C-p" 'other-window-backward)
 (global-set-key "\C-x\C-o" 'other-window)
+
+;; Enable eldoc in clojure buffers:
+(add-hook 'nrepl-interaction-mode-hook
+          'nrepl-turn-on-eldoc-mode)
+(add-hook 'nrepl-mode-hook 'paredit-mode)
 
 (when (equal system-type 'darwin)
   (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
