@@ -1,3 +1,4 @@
 *~
 *.pyc
 _emacs.d/vendor/nxhtml/etc/schema/xhtml-loader.rnc
+.DS_Store
