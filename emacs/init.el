@@ -1,6 +1,6 @@
 (require 'package)
 (add-to-list 'package-archives
-                          '("marmalade" . "http://marmalade-repo.org/packages/") t)
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -17,11 +17,95 @@
   (when (not (package-installed-p p))
       (package-install p)))
 
-(load-file "~/code/dotfiles/emacs/functions.el")
-(load-file "~/code/dotfiles/emacs/coding-style.el")
+(defun other-window-backward ()
+  "Select the previous window."
+  (interactive)
+  (other-window -1))
+
+(defun indent-buffer ()
+  "Indent the whole buffer."
+  (interactive)
+  (save-excursion
+    (indent-region (point-min) (point-max) nil)))
+
+(defun smart-split ()
+  "Split the window into 80-column sub-windows, and make sure no window has
+   fewer than 80 columns."
+  (interactive)
+  (defun smart-split-helper (w)
+    "Helper function to split a given window into two, the first of which has
+    80 columns."
+    (if (> (window-width w) 140)
+      (let ((w2 (split-window w 82 t)))
+        (smart-split-helper w2))))
+    (smart-split-helper nil))
+
+(defun close-all-buffers ()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
+
+(defun revert-all-buffers ()
+  (interactive)
+  (mapc 'revert-buffer (buffer-list)))
+
+(defun fill-sentence ()
+  (interactive)
+  (save-excursion
+    (or (eq (point) (point-max)) (forward-char))
+    (forward-sentence -1)
+    (indent-relative t)
+    (let ((beg (point))
+          (ix (string-match "LaTeX" mode-name)))
+      (forward-sentence)
+      (if (and ix (equal "LaTeX" (substring mode-name ix)))
+          (LaTeX-fill-region-as-paragraph beg (point))
+        (fill-region-as-paragraph beg (point))))))
+
+(defun map-filetype (pattern mode)
+  "Map from filename patterns to major modes"
+  (setq auto-mode-alist (cons `(,pattern . ,mode) auto-mode-alist)))
+
+(defun pretty-js-function ()
+  (font-lock-add-keywords
+   'nil `(("\\(function *\\)("
+           (0 (progn (compose-region (match-beginning 1)
+                                     (match-end 1) "ƒ")
+                     nil))))))
+
+(defun code-hook ()
+  "Customization for writing code"
+  (add-hook 'write-file-hooks 'delete-trailing-whitespace t)
+  (setq show-trailing-whitespace t)
+  (highlight-80+-mode t)
+  (setq indent-tabs-mode nil))
+
+(setq js2-basic-offset 2)
+
+(setq ruby-indent-level 2)
+
+(setq css-indent-level 4)
+
+(setq-default tab-width 2)
+
+(add-hook 'clojure-mode-hook 'code-hook)
+(add-hook 'ruby-mode-hook 'code-hook)
+(add-hook 'css-mode-hook 'code-hook)
+(add-hook 'js2-mode-hook 'pretty-js-function)
+(add-hook 'c-mode-common-hook 'code-hook)
+
+(add-hook 'clojure-mode-hook '(lambda () (paredit-mode t)))
+(when (require 'rainbow-delimiters nil 'noerror)
+  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
+
+(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
+
+(setq-default indent-tabs-mode nil)
+
+(setq auto-mode-alist (cons '("\\.[ch]$" . c++-mode)
+                            auto-mode-alist)) ; .c,.h in C++ mode
 
 ;; For some reason clojure-mode is not automatically loaded by ELPA on
-;;Mac
+;; Mac
 (require 'clojure-mode)
 
 ;; Turn off generating *~ files
@@ -62,20 +146,7 @@ unless given a prefix argument."
 (menu-bar-mode -1)
 (set-default 'indicate-empty-lines t)
 
-;; (if window-system (hjiang-gui-customization))
 (load-theme 'zenburn t)
-
-(setq ring-bell-function
-      (lambda ()
-        (call-process-shell-command "xset led 3; xset -led 3" nil 0 nil)))
-
-;; (set-default-font "Inconsolata-11")
-;; (setq default-frame-alist '((font . "Inconsolata-11")))
-;; (let ((myfont (if (eq system-type 'darwin) "Inconsolata-15"
-;;                     "Inconsolata-11")))
-;;       (set-default-font myfont)
-;;       (setq default-frame-alist
-;;             `((font . ,myfont))))
 
 ;; enable wheelmouse support by default
 (mwheel-install)
@@ -112,6 +183,7 @@ unless given a prefix argument."
 (smart-split)
 (server-start)
 (custom-set-variables
+
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
