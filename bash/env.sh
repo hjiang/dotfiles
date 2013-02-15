@@ -35,8 +35,8 @@ if [[ -d "${HOME}/.cabal/bin" ]]; then
     PATH="${HOME}/.cabal/bin":$PATH
 fi
 
-if [[ -d "/usr/local/Cellar/ruby/1.9.3-p125/bin" ]]; then
-    PATH="/usr/local/Cellar/ruby/1.9.3-p125/bin:$PATH"
+if [[ -d "/usr/local/opt/ruby/bin" ]]; then
+    PATH="/usr/local/opt/ruby/bin:$PATH"
 fi
 
 if [[ -d "$HOME/code/arcanist/bin" ]]; then
