@@ -10,7 +10,7 @@
 (defvar my-packages
   '(starter-kit starter-kit-lisp starter-kit-bindings clojure-mode
                 clojure-test-mode clojure-project-mode color-theme
-                zenburn-theme nrepl rainbow-delimiters)
+                zenburn-theme nrepl rainbow-delimiters ruby-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
