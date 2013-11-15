@@ -48,7 +48,9 @@ if [[ -d "/usr/local/share/npm/bin" ]]; then
 fi
 
 RUBY_BINDIR=`brew info ruby|grep /bin|tr -d ' '`
-PATH=$RUBY_BINDIR:$PATH
+if [[ -d "${RUBY_BINDIR}" ]]; then
+    PATH="${RUBY_BINDIR}:$PATH"
+fi
 
 export PATH
 
@@ -65,3 +67,11 @@ export MEIWEISQ_PASSWORD=''
 # export TERM=xterm-256color
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+if [[ -d /usr/local/opt/curl-ca-bundle/share/ ]]; then
+    export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+fi
+
+if [[ -d /usr/local/opt/android-sdk ]]; then
+    export ANDROID_HOME=/usr/local/opt/android-sdk
+fi

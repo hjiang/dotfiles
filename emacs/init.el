@@ -104,6 +104,9 @@
 (setq auto-mode-alist (cons '("\\.[ch]$" . c++-mode)
                             auto-mode-alist)) ; .c,.h in C++ mode
 
+(setq auto-mode-alist (cons '("\\.js$" . js2-mode)
+                            auto-mode-alist)) ; .c,.h in C++ mode
+
 ;; For some reason clojure-mode is not automatically loaded by ELPA on
 ;; Mac
 (require 'clojure-mode)
@@ -146,7 +149,7 @@ unless given a prefix argument."
 (menu-bar-mode -1)
 (set-default 'indicate-empty-lines t)
 
-(load-theme 'zenburn t)
+(when (display-graphic-p) (load-theme 'zenburn t))
 
 ;; enable wheelmouse support by default
 (mwheel-install)
