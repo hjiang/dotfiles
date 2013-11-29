@@ -5,15 +5,13 @@ set enc=utf-8
 syntax on
 colorscheme desert
 
-set nospell
-
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 set nobackup
 
 set ruler " show the cursor position all the time
-set history=100 " keep 50 lines of command line history
+set history=100 " keep 100 lines of command line history
 set showcmd    " display incomplete commands
 set incsearch  " do incremental searching
 
@@ -33,8 +31,7 @@ set et
 filetype plugin indent on
 
 set tabstop=2
-set shiftwidth=4
-set textwidth=80
+set shiftwidth=2
 set expandtab
 
 autocmd FileType text :setlocal textwidth=80
@@ -61,32 +58,11 @@ autocmd BufReadPost *
                         \   exe "normal g`\"" |
                         \ endif
 
-set enc=utf-8
-"set wrap
-"set linebreak
 set mousemodel=extend
 let xml_use_xhtml=1
-
-" Project plugin settings
-
-let g:proj_window_width=32
-let g:proj_window_increment=24
-let g:proj_flags='imstL'
 
 highlight WhitespaceEOL ctermbg=lightgray guibg=lightgray
 match WhitespaceEOL /s+$/
 
 set shellslash
 set grepprg=grep\ -nH\ $*
-
-let g:Tex_ViewRule_pdf = 'open'
-let g:Tex_ViewRule_ps = 'open'
-let g:Tex_ViewRule_dvi = 'open'
-
-let g:load_doxygen_syntax=1
-
-let g:proj_run1 = 'make'
-let g:proj_run2 = '!cmake .'
-let g:proj_run3 = 'make test'
-
-let g:AutoComplPop_NotEnableAtStartup = 1
