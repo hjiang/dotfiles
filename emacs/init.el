@@ -183,6 +183,8 @@ unless given a prefix argument."
   (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
   (push "/usr/local/bin" exec-path))
 
+(auto-fill-mode -1)
+
 (smart-split)
 (server-start)
 (custom-set-variables
