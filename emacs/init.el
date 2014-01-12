@@ -184,7 +184,10 @@ unless given a prefix argument."
   (push "/usr/local/bin" exec-path))
 
 (auto-fill-mode -1)
-
+(set-fontset-font
+    (frame-parameter nil 'font)
+    'han
+    (font-spec :family "Hiragino Sans GB" ))
 (smart-split)
 (server-start)
 (custom-set-variables
