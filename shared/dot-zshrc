@@ -1,0 +1,87 @@
+[[ -f "$HOME/.config/zsh/env.zsh" && ! -v JH_ZSHENV_INITIALIZED ]] && \
+    source "$HOME/.config/zsh/env.zsh"
+[[ -f "$HOME/.config/zsh/local.zsh" ]] && source "$HOME/.config/zsh/local.zsh"
+
+if [[ -o interactive && -z "$PIPENV_ACTIVE" ]] && type keychain > /dev/null
+then
+    ssh_identities=$(for file in $HOME/.ssh/*.pub; do echo "${file%%.pub}"; done)
+    eval "$(keychain --eval --quiet -Q $ssh_identities)"
+fi
+
+if [[ -o interactive && -z "$PIPENV_ACTIVE" && "${TERM}" != "dumb" ]] && type starship > /dev/null
+then
+    eval "$(starship init zsh)"
+fi
+
+if [[ "$(uname)" = 'Darwin' ]] && [[ "$http_proxy" = "" ]] && \
+    [[ "$https_proxy" = "" ]] && [[ "$all_proxy" = "" ]] && \
+    (type macos-proxy-env >> /dev/null) && [[ -o interactive ]]
+then
+    eval $(macos-proxy-env)
+fi
+
+vterm_printf(){
+    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ] ); then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+fi
+
+command -v direnv >/dev/null 2>&1 && eval "$(direnv hook zsh)"
+
+export HOMEBREW_NO_ENV_HINTS=1
+
+if [[ -e "/Applications/Surge.app/Contents/Applications/surge-cli" ]]; then
+    alias surge-cli="/Applications/Surge.app/Contents/Applications/surge-cli"
+fi
+
+if [[ -e "/Applications/Tailscale.app/Contents/MacOS/Tailscale" ]]; then
+    alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+fi
+
+# ICU is need for compiling postgres
+if [[ -d "/opt/homebrew/opt/icu4c" ]]; then
+    export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
+    export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
+
+    export LDFLAGS="-L/opt/homebrew/opt/icu4c/lib:$LDFLAGS"
+    export CPPFLAGS="-I/opt/homebrew/opt/icu4c/include:$CPPFLAGS"
+
+    export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
+fi
+
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
+# Some zsh plugins such as poetry expects this directory to exist
+if [[ ! -d "$ZSH_CACHE_DIR"/completions ]]; then
+    mkdir -p "$ZSH_CACHE_DIR"/completions
+fi
+
+if [[ ! -d $ZSH_CACHE_DIR/antidote ]]; then
+    git clone --depth=1 https://github.com/mattmc3/antidote.git $ZSH_CACHE_DIR/antidote
+fi
+
+source $ZSH_CACHE_DIR/antidote/antidote.zsh
+antidote load
+
+alias gcam='git commit --all --message'
+alias gp='git push'
+
+if command -v eza >/dev/null 2>&1; then
+    alias ls='eza'
+fi
+
+if command -v gen-envel >/dev/null 2>&1; then
+    gen-envel --vars PATH http_proxy https_proxy all_proxy SSH_AUTH_SOCK \
+              SSH_AGENT_PID --output ~/.emacs.d/.local/env.el
+fi

@@ -1,0 +1,70 @@
+export GOPATH="$HOME/.go-pkgs"
+export EDITOR="$HOME/bin/ec"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export PROXYCHAINS_CONF_FILE="$XDG_CONFIG_HOME/proxychains/proxychains.conf"
+
+LINUX_HOMEBREW_PATH="/home/linuxbrew/.linuxbrew"
+MAC_HOMEBREW_PATH="/opt/homebrew"
+TEXLIVE_PATH="/usr/local/texlive/2024/bin/universal-darwin"
+
+if [[ -d "$LINUX_HOMEBREW_PATH" && -z "$PIPENV_ACTIVE" ]]
+then
+    eval "$($LINUX_HOMEBREW_PATH/bin/brew shellenv)"
+fi
+
+if [[ -d "$MAC_HOMEBREW_PATH" && -z "$PIPENV_ACTIVE" ]]; then
+    eval "$($MAC_HOMEBREW_PATH/bin/brew shellenv)"
+fi
+
+if command -v brew >/dev/null 2>&1; then
+    if [[ -e "$(brew --prefix asdf)/libexec/asdf.sh" ]]; then
+        source "$(brew --prefix asdf)/libexec/asdf.sh"
+        ASDF_INITIALIZED=1
+    fi
+fi
+
+if command -v brew >/dev/null 2>&1; then
+    if [ -d "$(brew --prefix)/opt/grep/libexec/gnubin" ]; then
+        PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+    fi
+    if [ -d "$(brew --prefix)/opt/gnu-sed/libexec/gnubin" ]; then
+        PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+    fi
+
+    if [[ -d "$(brew --prefix llvm)/bin" ]]; then
+        PATH="$(brew --prefix llvm)/bin:$PATH"
+        MANPATH="$(brew --prefix llvm)/share/man:$MANPATH"
+    fi
+    export HOMEBREW_NO_ENV_HINTS=1
+fi
+
+if [[ ! -v ASDF_INITIALIZED && -e "/opt/asdf-vm/asdf.sh" ]]; then
+    source "/opt/asdf-vm/asdf.sh"
+    ASDF_INITIALIZED=1
+fi
+
+if command -v asdf >/dev/null 2>&1; then
+    if [[ ! -v ASDF_INITIALIZED  ]]; then
+        PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+        ASDF_INITIALIZED=1
+    fi
+fi
+
+if [[ -d "$TEXLIVE_PATH" ]]; then
+    PATH="$TEXLIVE_PATH:$PATH"
+fi
+
+if [[ -d "/opt/homebrew/opt/postgresql@17/bin" ]]; then
+    PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+fi
+
+PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
+export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
+export PATH
+export MANPATH
+export JH_ZSHENV_INITIALIZED=1
