@@ -83,5 +83,5 @@ fi
 
 if command -v gen-envel >/dev/null 2>&1; then
     gen-envel --vars PATH http_proxy https_proxy all_proxy SSH_AUTH_SOCK \
-              SSH_AGENT_PID --output ~/.emacs.d/.local/env.el
+              SSH_AGENT_PID --output ${XDG_CACHE_HOME}/emacs/env.el
 fi
