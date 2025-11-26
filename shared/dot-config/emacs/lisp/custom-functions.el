@@ -53,7 +53,7 @@
   "Reload environment variables from ENV-FILE.
 If ENV-FILE is not provided, uses ~/.emacs.d/.local/env.el"
   (interactive)
-  (let ((file (or env-file "~/.emacs.d/.local/env.el")))
+  (let ((file (or env-file "~/.cache/emacs/env.el")))
     (if (file-readable-p file)
         (progn
           (load-env-file file)
