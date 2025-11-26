@@ -4,6 +4,8 @@ This is my personal configuration file for macOS and Linux.
 
 ## How to use
 
+Run `make download-assets` to download 3rd-party assets (cursor themes, etc.).
+
 Run `make install` to create symlinks in `$HOME`.
 
 Run `make uninstall` to remove the symlinks.
