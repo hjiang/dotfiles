@@ -1,5 +1,5 @@
-[[ -f "$HOME/.config/zsh/env.zsh" && ! -v JH_ZSHENV_INITIALIZED ]] && \
-    source "$HOME/.config/zsh/env.zsh"
+[[ -e "$HOME/.zshenv" && ! -v JH_ZSHENV_INITIALIZED ]] && \
+    source "$HOME/.zshenv"
 [[ -f "$HOME/.config/zsh/local.zsh" ]] && source "$HOME/.config/zsh/local.zsh"
 
 if [[ -o interactive && -z "$PIPENV_ACTIVE" ]] && type keychain > /dev/null
