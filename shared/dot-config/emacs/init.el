@@ -705,6 +705,13 @@
   :init
   (setq alert-default-style 'notifier))
 
+(use-package server
+  :straight (:type built-in)
+  :defer 1
+  :config
+  (unless (server-running-p)
+    (server-start)))
+
 ;; Colorize compilation buffers
 (if (>= emacs-major-version 28)
     (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
@@ -714,10 +721,6 @@
       (let ((inhibit-read-only t))
         (ansi-color-apply-on-region compilation-filter-start (point))))
     (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)))
-
-(require 'server)
-(unless (server-running-p)
-  (server-start))
 
 (provide 'init)
 ;;; init.el ends here
