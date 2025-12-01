@@ -715,5 +715,9 @@
         (ansi-color-apply-on-region compilation-filter-start (point))))
     (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)))
 
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
 (provide 'init)
 ;;; init.el ends here
