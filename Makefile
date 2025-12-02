@@ -6,7 +6,9 @@ ifeq (${HOSTNAME},unknown)
 $(warning Could not determine hostname)
 endif
 
-.PHONY: install uninstall download-assets rose-pine-hyprcursor wallpaper-house
+.PHONY: default install uninstall download-assets rose-pine-hyprcursor wallpaper-house
+
+default: install
 
 download-assets: rose-pine-hyprcursor wallpaper-house
 
@@ -33,8 +35,8 @@ wallpaper-house:
 	fi
 
 install:
-	stow shared
-	stow ${HOSTNAME}
+	stow --restow shared
+	stow --restow ${HOSTNAME}
 
 uninstall:
 	stow -D ${HOSTNAME}
