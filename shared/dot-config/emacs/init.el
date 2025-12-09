@@ -177,19 +177,24 @@
               ("C-c C-e" . markdown-do)))
 
 (use-package cmake-mode
+  :defer t
   :straight t)
 
 (use-package clojure-mode
+  :defer t
   :straight t)
 
 (use-package erlang
+  :defer t
   :straight t)
 
 (use-package zig-mode
+  :defer t
   :straight t)
 
 (use-package platformio-mode
   :straight t
+  :defer t
   :hook (c++-ts-mode . (lambda ()
                          (platformio-conditionally-enable))))
 
@@ -197,10 +202,12 @@
   :straight (gdscript-mode
              :type git
              :host github
-             :repo "godotengine/emacs-gdscript-mode"))
+             :repo "godotengine/emacs-gdscript-mode")
+  :defer t)
 
 (use-package go-mode
-  :straight t)
+  :straight t
+  :defer t)
 
 (use-package elixir-ts-mode
   :straight (:type built-in)
@@ -218,10 +225,12 @@
          ("\\.dockerignore\\'" . dockerfile-ts-mode)))
 
 (use-package alchemist
-  :straight t)
+  :straight t
+  :defer t)
 
 (use-package sly
   :straight t
+  :defer t
   :config
   (setq inferior-lisp-program "sbcl"))
 
