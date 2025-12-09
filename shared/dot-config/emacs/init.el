@@ -225,6 +225,10 @@
   :config
   (setq inferior-lisp-program "sbcl"))
 
+(use-package ebuild-mode
+  :straight t
+  :defer t)
+
 ;;; ============================================================================
 ;;; UI & Editing Enhancement
 ;;; ============================================================================
