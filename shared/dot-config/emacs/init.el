@@ -509,7 +509,9 @@
 (use-package colorful-mode
   :straight t
   :defer t
-  :hook (prog-mode . colorful-mode))
+  :hook
+  (prog-mode . colorful-mode)
+  (conf-space-mode . colorful-mode))
 
 (use-package dashboard
   :straight t
