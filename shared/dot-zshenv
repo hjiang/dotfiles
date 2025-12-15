@@ -1,3 +1,5 @@
+# -*- mode: shell-script -*-
+
 export GOPATH="$HOME/.go-pkgs"
 export EDITOR="$HOME/bin/ec"
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -38,6 +40,10 @@ if command -v brew >/dev/null 2>&1; then
         MANPATH="$(brew --prefix llvm)/share/man:$MANPATH"
     fi
     export HOMEBREW_NO_ENV_HINTS=1
+fi
+
+if command -v mise >/dev/null 2>&1; then
+   eval "$(mise activate zsh)"
 fi
 
 if [[ ! -v ASDF_INITIALIZED && -e "/opt/asdf-vm/asdf.sh" ]]; then
