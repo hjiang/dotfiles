@@ -95,7 +95,8 @@
         delete-old-versions t
         kept-new-versions 6
         kept-old-versions 2
-        version-control t)
+        version-control t
+        vc-follow-symlinks t)
   (column-number-mode 1)
   (recentf-mode 1)
   (setq history-length 1000)
