@@ -1,11 +1,15 @@
 # -*- mode: shell-script -*-
 
 export GOPATH="$HOME/.go-pkgs"
-export EDITOR="$HOME/bin/ec"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export PROXYCHAINS_CONF_FILE="$XDG_CONFIG_HOME/proxychains/proxychains.conf"
+
+editor="$HOME/bin/ec"
+if [[ -x $editor ]]; then
+    export EDITOR=$editor
+fi
 
 LINUX_HOMEBREW_PATH="/home/linuxbrew/.linuxbrew"
 MAC_HOMEBREW_PATH="/opt/homebrew"
