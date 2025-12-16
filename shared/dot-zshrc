@@ -1,3 +1,5 @@
+# -*- mode: shell-script -*-
+
 if [[ -o interactive && -z "$PIPENV_ACTIVE" ]] && type keychain > /dev/null
 then
     ssh_identities=$(for file in $HOME/.ssh/*.pub; do echo "${file%%.pub}"; done)
