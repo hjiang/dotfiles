@@ -48,17 +48,6 @@ if [[ -e "/Applications/Tailscale.app/Contents/MacOS/Tailscale" ]]; then
     alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 fi
 
-# ICU is need for compiling postgres
-if [[ -d "/opt/homebrew/opt/icu4c" ]]; then
-    export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
-    export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
-
-    export LDFLAGS="-L/opt/homebrew/opt/icu4c/lib:$LDFLAGS"
-    export CPPFLAGS="-I/opt/homebrew/opt/icu4c/include:$CPPFLAGS"
-
-    export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
-fi
-
 fpath+=~/.zfunc
 autoload -Uz compinit && compinit
 
