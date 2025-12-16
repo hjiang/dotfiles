@@ -73,4 +73,3 @@ PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
 export PATH
 export MANPATH
-export JH_ZSHENV_INITIALIZED=1

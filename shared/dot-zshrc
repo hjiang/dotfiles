@@ -1,7 +1,3 @@
-[[ -e "$HOME/.zshenv" && ! -v JH_ZSHENV_INITIALIZED ]] && \
-    source "$HOME/.zshenv"
-[[ -f "$HOME/.config/zsh/local.zsh" ]] && source "$HOME/.config/zsh/local.zsh"
-
 if [[ -o interactive && -z "$PIPENV_ACTIVE" ]] && type keychain > /dev/null
 then
     ssh_identities=$(for file in $HOME/.ssh/*.pub; do echo "${file%%.pub}"; done)
@@ -69,6 +65,8 @@ alias gp='git push'
 if command -v eza >/dev/null 2>&1; then
     alias ls='eza'
 fi
+
+[[ -f "$HOME/.config/zsh/local.zsh" ]] && source "$HOME/.config/zsh/local.zsh"
 
 if command -v gen-envel >/dev/null 2>&1; then
     gen-envel --vars PATH http_proxy https_proxy all_proxy SSH_AUTH_SOCK \
