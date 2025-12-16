@@ -32,8 +32,6 @@ if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
     alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
 fi
 
-command -v direnv >/dev/null 2>&1 && eval "$(direnv hook zsh)"
-
 export HOMEBREW_NO_ENV_HINTS=1
 
 if [[ -e "/Applications/Surge.app/Contents/Applications/surge-cli" ]]; then

@@ -25,13 +25,6 @@ if [[ -d "$MAC_HOMEBREW_PATH" && -z "$PIPENV_ACTIVE" ]]; then
 fi
 
 if command -v brew >/dev/null 2>&1; then
-    if [[ -e "$(brew --prefix asdf)/libexec/asdf.sh" ]]; then
-        source "$(brew --prefix asdf)/libexec/asdf.sh"
-        ASDF_INITIALIZED=1
-    fi
-fi
-
-if command -v brew >/dev/null 2>&1; then
     if [ -d "$(brew --prefix)/opt/grep/libexec/gnubin" ]; then
         PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
     fi
@@ -48,18 +41,6 @@ fi
 
 if command -v mise >/dev/null 2>&1; then
    eval "$(mise activate zsh)"
-fi
-
-if [[ ! -v ASDF_INITIALIZED && -e "/opt/asdf-vm/asdf.sh" ]]; then
-    source "/opt/asdf-vm/asdf.sh"
-    ASDF_INITIALIZED=1
-fi
-
-if command -v asdf >/dev/null 2>&1; then
-    if [[ ! -v ASDF_INITIALIZED  ]]; then
-        PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-        ASDF_INITIALIZED=1
-    fi
 fi
 
 if [[ -d "$TEXLIVE_PATH" ]]; then
