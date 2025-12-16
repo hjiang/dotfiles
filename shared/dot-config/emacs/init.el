@@ -60,7 +60,7 @@
 (require 'custom-functions)
 
 ;; Load environment variables if available
-(let ((env-file "~/.emacs.d/.local/env.el"))
+(let ((env-file "~/.cache/emacs/env.el"))
   (when (file-readable-p env-file)
     (load-env-file env-file)))
 

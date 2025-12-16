@@ -62,7 +62,7 @@ If ENV-FILE is not provided, uses ~/.emacs.d/.local/env.el"
 
 (defun setup-custom-file ()
   "Set up and load custom file."
-  (setq custom-file "~/.emacs.d/.local/custom.el")
+  (setq custom-file "~/.config/emacs/local.el")
   (when (file-readable-p custom-file)
     (load custom-file)))
 
