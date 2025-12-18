@@ -6,9 +6,11 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export PROXYCHAINS_CONF_FILE="$XDG_CONFIG_HOME/proxychains/proxychains.conf"
 
-editor="$HOME/bin/ec"
-if [[ -x $editor ]]; then
-    export EDITOR=$editor
+EDITOR="$HOME/bin/ec"
+LOCAL_ENV_FILE="$HOME/.config/zsh/local-env.zsh"
+
+if [[ -x $EDITOR ]]; then
+    export EDITOR
 fi
 
 LINUX_HOMEBREW_PATH="/home/linuxbrew/.linuxbrew"
@@ -58,3 +60,5 @@ PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
 export PATH
 export MANPATH
+
+[[ -f "$LOCAL_ENV_FILE" ]] && source "$LOCAL_ENV_FILE"
