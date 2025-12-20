@@ -71,8 +71,8 @@ if command -v zoxide >/dev/null 2>&1; then
     eval "$(zoxide init zsh)"
 fi
 
-if [[ -a /usr/share/atuin/shell-init/zsh ]]; then
-    source /usr/share/atuin/shell-init/zsh
+if [[ -a /usr/share/fzf/key-bindings.zsh ]]; then
+    source /usr/share/fzf/key-bindings.zsh
 fi
 
 [[ -f "$HOME/.config/zsh/local.zsh" ]] && source "$HOME/.config/zsh/local.zsh"
