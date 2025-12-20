@@ -3,6 +3,7 @@
 # Power menu options
 options="Lock Screen
 Logout
+Suspend
 Shutdown
 Reboot"
 
@@ -16,6 +17,9 @@ case "$selected" in
         ;;
     "Logout")
         hyprctl dispatch exit
+        ;;
+    "Suspend")
+        loginctl suspend
         ;;
     "Shutdown")
         loginctl poweroff
