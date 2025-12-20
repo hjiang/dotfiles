@@ -61,6 +61,7 @@ antidote load
 
 alias gcam='git commit --all --message'
 alias gp='git push'
+alias claude='env ANTHROPIC_API_KEY= claude'
 
 if command -v eza >/dev/null 2>&1; then
     alias ls='eza'
