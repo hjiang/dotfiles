@@ -64,11 +64,11 @@ alias gp='git push'
 # Unset the API key, so that claude uses the subscription
 alias claude='env ANTHROPIC_API_KEY= claude'
 
-if command -v eza >/dev/null 2>&1; then
+if (( $+commands[eza] )); then
     alias ls='eza'
 fi
 
-if command -v zoxide >/dev/null 2>&1; then
+if (( $+commands[zoxide] )); then
     eval "$(zoxide init zsh)"
     alias cd="z"
 fi
