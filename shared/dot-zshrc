@@ -52,18 +52,6 @@ if [[ ! -d "$ZSH_CACHE_DIR"/completions ]]; then
     mkdir -p "$ZSH_CACHE_DIR"/completions
 fi
 
-if [[ ! -d $ZSH_CACHE_DIR/antidote ]]; then
-    git clone --depth=1 https://github.com/mattmc3/antidote.git $ZSH_CACHE_DIR/antidote
-fi
-
-source $ZSH_CACHE_DIR/antidote/antidote.zsh
-antidote load
-
-alias gcam='git commit --all --message'
-alias gp='git push'
-# Unset the API key, so that claude uses the subscription
-alias claude='env ANTHROPIC_API_KEY= claude'
-
 if (( $+commands[eza] )); then
     alias ls='eza'
 fi
@@ -76,6 +64,23 @@ fi
 if [[ -a /usr/share/fzf/key-bindings.zsh ]]; then
     source /usr/share/fzf/key-bindings.zsh
 fi
+
+if [[ -a /usr/share/zsh/site-functions/fzf-tab.zsh ]]; then
+    source /usr/share/zsh/site-functions/fzf-tab.zsh
+fi
+
+if [[ ! -d $ZSH_CACHE_DIR/antidote ]]; then
+    git clone --depth=1 https://github.com/mattmc3/antidote.git $ZSH_CACHE_DIR/antidote
+fi
+
+source $ZSH_CACHE_DIR/antidote/antidote.zsh
+antidote load
+
+alias gcam='git commit --all --message'
+alias gp='git push'
+# Unset the API key, so that claude uses the subscription
+alias claude='env ANTHROPIC_API_KEY= claude'
+
 
 [[ -f "$HOME/.config/zsh/local.zsh" ]] && source "$HOME/.config/zsh/local.zsh"
 
