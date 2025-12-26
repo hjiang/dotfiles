@@ -61,10 +61,6 @@ if (( $+commands[zoxide] )); then
     alias cd="z"
 fi
 
-if [[ -a /usr/share/fzf/key-bindings.zsh ]]; then
-    source /usr/share/fzf/key-bindings.zsh
-fi
-
 if [[ -a /usr/share/zsh/site-functions/fzf-tab.zsh ]]; then
     source /usr/share/zsh/site-functions/fzf-tab.zsh
 fi
@@ -75,6 +71,10 @@ fi
 
 source $ZSH_CACHE_DIR/antidote/antidote.zsh
 antidote load
+
+if [[ -a /usr/share/fzf/key-bindings.zsh ]]; then
+    source /usr/share/fzf/key-bindings.zsh
+fi
 
 alias gcam='git commit --all --message'
 alias gp='git push'
