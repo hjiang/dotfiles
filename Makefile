@@ -1,6 +1,7 @@
 # The default options for `stow` are specified in `.stowrc`
 
-HOSTNAME := $(shell hostname 2>/dev/null || uname -n 2>/dev/null || echo "unknown")
+ORIGINAL_HOSTNAME := $(shell hostname -s 2>/dev/null || uname -n 2>/dev/null || echo "unknown")
+HOSTNAME := $(shell echo $(ORIGINAL_HOSTNAME) | tr '[:upper:]' '[:lower:]')
 
 ifeq (${HOSTNAME},unknown)
 $(warning Could not determine hostname)
