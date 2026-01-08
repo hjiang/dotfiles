@@ -1,4 +1,5 @@
 font-family = FiraCode Nerd Font
-font-size = 16
 theme = Tomorrow Night
 keybind = shift+enter=text:\n
+
+config-file = ?host-custom
