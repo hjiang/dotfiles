@@ -1,5 +1,6 @@
 font-family = FiraCode Nerd Font
 theme = Tomorrow Night
 keybind = shift+enter=text:\n
+shell-integration-features = sudo,ssh-terminfo,ssh-env
 
 config-file = ?host-custom
