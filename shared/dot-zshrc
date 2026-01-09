@@ -56,7 +56,7 @@ if (( $+commands[eza] )); then
     alias ls='eza'
 fi
 
-if (( $+commands[zoxide] )); then
+if [[ -o interactive ]] && (( $+commands[zoxide] )); then
     eval "$(zoxide init zsh)"
     alias cd="z"
 fi
