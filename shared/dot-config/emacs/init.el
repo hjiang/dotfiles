@@ -152,6 +152,12 @@
   (setf (alist-get 'elixir-ts-mode apheleia-mode-alist) 'mix-format))
 
 ;; Language-specific modes and tools
+(use-package js-json-mode
+  :straight (:type built-in)
+  :defer t
+  :config
+  (setq js-indent-level 2))
+
 (use-package yaml-mode
   :straight t
   :defer t)
