@@ -113,7 +113,11 @@ If DIRECTORY is nil, defaults to ~/.emacs.d/"
         initial-scratch-message nil))
 
 (defun effective-display-height ()
-  (/ (display-pixel-height) (frame-monitor-attribute 'scale-factor)))
+  "Calculate effective display height accounting for monitor scaling.
+Returns the display pixel height divided by the scale factor.
+Falls back to raw pixel height if scale factor is unavailable."
+  (let ((scale-factor (or (frame-monitor-attribute 'scale-factor) 1)))
+    (/ (display-pixel-height) scale-factor)))
 
 (defun adaptive-font-height ()
   (let ((d-height (effective-display-height)))
