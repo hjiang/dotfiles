@@ -8,7 +8,7 @@ Shutdown
 Reboot"
 
 # Show menu and get selection
-selected=$(printf "%s" "$options" | vicinae dmenu --no-section --no-metadata --no-quick-look)
+selected=$(printf "%s" "$options" | walker --dmenu)
 
 # Execute action based on selection
 case "$selected" in
