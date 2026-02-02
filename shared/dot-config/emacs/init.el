@@ -166,6 +166,11 @@
   :straight t
   :defer t)
 
+(use-package nix-mode
+  :straight t
+  :defer t
+  :mode "\\.nix\\'")
+
 (use-package ansible
   :straight t
   :defer t
