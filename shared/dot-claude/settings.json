@@ -1,7 +1,10 @@
 {
-    "permissions": {
-        "allow": ["WebFetch", "WebSearch"]
-    },
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch"
+    ]
+  },
   "enabledPlugins": {
     "code-review@claude-plugins-official": true,
     "explanatory-output-style@claude-plugins-official": true,
@@ -10,5 +13,6 @@
     "github@claude-plugins-official": true,
     "greptile@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true
-  }
+  },
+  "model": "opus"
 }
